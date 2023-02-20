@@ -3,9 +3,37 @@
 body{
 
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-
+    position: relative;
+}
+main{
+    background: #0a0a0a;
+}
+p{
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+/* navbar section  */
+.navbar-nav{
+    gap: 2rem   ;
+}
+/* ends */
+/* Hero section */
+.hero-section{
+    max-width: 1412px;
+    margin-inline: auto;
+}
+.hero{
+    height: 714px;
+    padding: 2rem 0 0 0;
+    
+}
+.hero video{
+    object-fit: cover;
+    width: 100%;
+    height: 89%;
 }
 
+/* ends */
 .cuz-logo img{
     width: 30%;
 }
@@ -25,10 +53,7 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     max-width: 1200px;
     margin-inline: auto;
 } */
-.hero video{
-    width: 100%;
-    height: 500px;
-}
+
 .title{
     display: flex;
     align-items: center;
@@ -36,7 +61,8 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 2.5em;
     font-weight: 500;
     text-align: center;
-    padding-top: 1rem;
+    padding-top: 5rem;
+    color: white;
 }
 .card-cont{
     display: flex;
@@ -63,6 +89,9 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .blog-details{
     padding: 2rem ;
+}
+.blog-details h2,p{
+    color: white;
 }
 
 /* ends */
@@ -102,4 +131,44 @@ footer{
 .cuz-jf-end{
     justify-content: end;
 }
+/* ends */
+
+/* background noise */
+.bg-noise {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	pointer-events: none;
+	overflow: hidden;
+}
+.bg-noise:before {
+	position: absolute;
+	content: '';
+	top: -10rem;
+	left: -10rem;
+	width: calc(100% + 20rem);
+	height: calc(100% + 20rem);
+	z-index: -1;
+	pointer-events: none;
+	background-image: url(./assets/images/bg-noise.png);
+	background-position: 50%;
+	animation: BgNoise 1s steps(2) infinite;
+}
+@keyframes BgNoise {
+	0% { transform: translate3d(0, 9rem, 0) }
+	10% { transform: translate3d(-1rem, -4rem, 0) }
+	20% { transform: translate3d(-8rem, 2rem, 0) }
+	30% { transform: translate3d(9rem, -9rem, 0) }
+	40% { transform: translate3d(-2rem, 7rem, 0) }
+	50% { transform: translate3d(-9rem, -4rem, 0) }
+	60% { transform: translate3d(2rem, 6rem, 0) }
+	70% { transform: translate3d(7rem, -8rem, 0) }
+	80% { transform: translate3d(-9rem, 1rem, 0) }
+	90% { transform: translate3d(6rem, -5rem, 0) }
+	to { transform: translate3d(-7rem, 0, 0) }
+}
+
 /* ends */
