@@ -1,16 +1,32 @@
-const menu = document.querySelector(".ham-menu");
-const mobileMenu = document.querySelector(".mb-nav");
-menu.addEventListener("click", () => {
-  let temp = false;
-  if (menu.classList.contains("anime")) {
-    temp = false;
-    menu.classList.remove("anime");
-  } else {
-    temp = true;
-    menu.classList.add("anime");
-  }
+const nav = document.querySelector(".header");
+const body = document.body;
+const main = document.querySelector("main");
 
-  temp
-    ? mobileMenu.classList.add("active")
-    : mobileMenu.classList.remove("active");
+const items = document.querySelectorAll(".items");
+const card = document.querySelectorAll(".card");
+let activeBtn = "carved";
+items.forEach((x) => {
+  x.addEventListener("click", () => {
+    showActive(x.id);
+    items.forEach((y) => {
+      if (y.classList.contains("add")) {
+        y.classList.remove("add");
+      }
+    });
+    x.classList.add("add");
+  });
 });
+
+// categories
+function resetActive() {}
+function showActive(newmenubtn) {
+  activeBtn = newmenubtn;
+  card.forEach((card) => {
+    if (card.classList.contains(activeBtn)) {
+      card.style.display = "flex";
+    } else {
+      card.style.display = "none";
+    }
+  });
+}
+// ends
