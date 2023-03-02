@@ -5,8 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/contact-style.css" />
+    <link rel="stylesheet" href="toast.css" />
     <!-- <link rel="stylesheet" href="style.css" /> -->
 
+    <!-- emailjs  -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script src="./mail.js" defer></script>
+    <!-- ends -->
     <!-- locomotive -->
     <link
       rel="stylesheet"
@@ -32,7 +40,7 @@
     <title>Products</title>
   </head>
   <body class="dark">
-    <header class="">
+    <header class="blur">
       <nav class="navbar navbar-expand-lg blur">
         <div class="container">
           <a class="navbar-brand cuz-logo col-2 col-md" href="#">
@@ -103,51 +111,59 @@
           </div>
         </div>
       </section>
-
+      <div class="toast">
+        <div class="toast-content">
+          <i class="uil uil-check toast-check"></i>
+          <div class="message">
+            <span class="message-text text-1">Success</span>
+            <span class="message-text text-2">Your changes has been saved</span>
+          </div>
+        </div>
+        <i class="uil uil-multiply toast-close"></i>
+        <div class="progress"></div>
+      </div>
       <section class="contact section-padding">
         <div class="container">
           <div class="row">
             <div class="col-lg-6">
               <div class="form">
-                <form id="contact-form" method="post" action="contact.php">
-                  <div class="messages"></div>
+                <div class="messages"></div>
 
-                  <div class="controls">
-                    <div class="form-group">
-                      <input
-                        id="form_name"
-                        type="text"
-                        name="name"
-                        placeholder="Name"
-                        required="required"
-                      />
-                    </div>
-
-                    <div class="form-group">
-                      <input
-                        id="form_email"
-                        type="email"
-                        name="email"
-                        placeholder="Email"
-                        required="required"
-                      />
-                    </div>
-
-                    <div class="form-group">
-                      <textarea
-                        id="form_message"
-                        name="message"
-                        placeholder="Message"
-                        rows="4"
-                        required="required"
-                      ></textarea>
-                    </div>
-
-                    <button type="submit" class="btn-curve btn-wit">
-                      <span>Send Message</span>
-                    </button>
+                <div class="controls">
+                  <div class="form-group">
+                    <input
+                      id="name"
+                      type="text"
+                      name="name"
+                      placeholder="Name"
+                      required="required"
+                    />
                   </div>
-                </form>
+
+                  <div class="form-group">
+                    <input
+                      id="email"
+                      type="email"
+                      name="email"
+                      placeholder="Email"
+                      required="required"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <textarea
+                      id="message"
+                      name="message"
+                      placeholder="Message"
+                      rows="4"
+                      required="required"
+                    ></textarea>
+                  </div>
+
+                  <button type="submit" class="btn-curve btn-wit submit">
+                    <span>Send Message</span>
+                  </button>
+                </div>
               </div>
             </div>
             <div class="col-lg-5 offset-lg-1">
