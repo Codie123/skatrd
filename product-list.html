@@ -25,15 +25,15 @@
     <title>Products</title>
   </head>
   <body>
-    <main class="cuz-main">
+    <main class="cuz-main" data-scroll-container>
       <header class="">
         <nav class="navbar navbar-expand-lg blur">
           <div class="container">
-            <a class="navbar-brand cuz-logo col-2 col-md" href="#">
+            <a class="navbar-brand cuz-logo col-2 col-md" href="index.html">
               <img src="./logo.png" alt="" />
             </a>
             <button
-              class="navbar-toggler cuz-nav-toggle"
+              class="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNav"
@@ -46,20 +46,15 @@
             <div class="collapse navbar-collapse cuz-jf-end" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="index.html"
+                  <a class="nav-link active" aria-current="page" href="#"
                     >Home</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="product-list.html"
-                    >Collection</a
-                  >
+                  <a class="nav-link" href="product-list.html">Collection</a>
                 </li>
                 <li class="nav-item">
-                  <a href="look-book.html" class="nav-link">Look Book</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
+                  <a class="nav-link" href="#">Contact</a>
                 </li>
               </ul>
             </div>
@@ -73,41 +68,61 @@
           <li class="items" id="skate">SKATE CHANGE LIFE</li>
         </ul>
       </div>
-      <section class="">
+      <section class="" data-scroll-section>
         <div class="container">
           <div class="row">
             <div class="title">Product Collection</div>
           </div>
           <div class="card-cont">
             <!-- carved -->
-            <div class="card cuz-card carved">
+            <div
+              class="card cuz-card carved"
+              data-scroll
+              data-scroll-speed="1"
+              data-scroll-direction="vertical"
+            >
               <a href="product-inner.html">
                 <img src="./assets/images/pr-1.jpg" alt="" />
               </a>
               <div class="details">
-                <h2>Carved</h2>
+                <h2>Product-1</h2>
                 <p>Price</p>
               </div>
             </div>
-            <div class="card cuz-card carved">
+            <div
+              class="card cuz-card carved"
+              data-scroll
+              data-scroll-speed="1"
+              data-scroll-direction="vertical"
+            >
               <a href="product-inner.html">
                 <img src="./assets/images/pr-2.jpg" alt="" />
               </a>
               <div class="details">
-                <h2>Carved</h2>
+                <h2>Product-1</h2>
                 <p>Price</p>
               </div>
             </div>
-            <div class="card cuz-card carved">
+            <div
+              class="card cuz-card carved"
+              data-scroll
+              data-scroll-speed="1"
+              data-scroll-direction="vertical"
+            >
               <a href="product-inner.html">
                 <img src="./assets/images/pr-3.jpg" alt="" />
               </a>
               <div class="details">
-                <h2>Carved</h2>
+                <h2>Product-1</h2>
                 <p>Price</p>
               </div>
             </div>
-            <div class="card cuz-card carved">
+            <div
+              class="card cuz-card carved"
+              data-scroll
+              data-scroll-speed="1"
+              data-scroll-direction="vertical"
+            >
               <a href="product-inner.html">
                 <img src="./assets/images/pr-4.jpg" alt="" />
               </a>
@@ -117,7 +132,12 @@
               </div>
             </div>
             <!-- skate change life  -->
-            <div class="card cuz-card skate">
+            <div
+              class="card cuz-card skate"
+              data-scroll
+              data-scroll-speed="1"
+              data-scroll-direction="vertical"
+            >
               <a href="product-inner.html">
                 <img src="./assets/skate/DSC_2415.jpg" alt="" />
               </a>
@@ -126,36 +146,56 @@
                 <p>Price</p>
               </div>
             </div>
-            <div class="card cuz-card skate">
+            <div
+              class="card cuz-card skate"
+              data-scroll
+              data-scroll-speed="1"
+              data-scroll-direction="vertical"
+            >
               <a href="product-inner.html">
-                <img src="./assets/skate/fulls1.jpg" alt="" />
+                <img src="./assets/images/pr-1.jpg" alt="" />
               </a>
               <div class="details">
                 <h2>Product-1</h2>
                 <p>Price</p>
               </div>
             </div>
-            <div class="card cuz-card skate">
+            <div
+              class="card cuz-card skate"
+              data-scroll
+              data-scroll-speed="1"
+              data-scroll-direction="vertical"
+            >
               <a href="product-inner.html">
-                <img src="./assets/skate/nc3.jpg" alt="" />
+                <img src="./assets/images/pr-2.jpg" alt="" />
               </a>
               <div class="details">
                 <h2>Product-1</h2>
                 <p>Price</p>
               </div>
             </div>
-            <div class="card cuz-card skate">
+            <div
+              class="card cuz-card skate"
+              data-scroll
+              data-scroll-speed="1"
+              data-scroll-direction="vertical"
+            >
               <a href="product-inner.html">
-                <img src="./assets/skate/re1.jpg" alt="" />
+                <img src="./assets/images/pr-3.jpg" alt="" />
               </a>
               <div class="details">
                 <h2>Product-1</h2>
                 <p>Price</p>
               </div>
             </div>
-            <div class="card cuz-card skate">
+            <div
+              class="card cuz-card skate"
+              data-scroll
+              data-scroll-speed="1"
+              data-scroll-direction="vertical"
+            >
               <a href="product-inner.html">
-                <img src="./assets/skate/t2.jpg" alt="" />
+                <img src="./assets/images/pr-4.jpg" alt="" />
               </a>
               <div class="details">
                 <h2>Product-1</h2>
@@ -166,16 +206,16 @@
         </div>
       </section>
 
-      <footer>
-        <div class="container-fluid">
+      <footer data-scroll-section>
+        <div class="container-fluid" data-scroll>
           <div class="row">
             <div class="ft-cont">
-              <div class="ft-logo col-5">
+              <div class="ft-logo col-3">
                 <img src="./logo.png" alt="" />
               </div>
-              <div class="col-6 cuz-ft-flex">
+              <div class="col-3"></div>
+              <div class="col-6 cuz-ft-nav">
                 <ul>
-                  <h3>Help & Assistant</h3>
                   <li><a href="#">Home</a></li>
                   <li><a href="#">Collection</a></li>
                   <li><a href="#">Contact</a></li>
@@ -188,12 +228,11 @@
                 </ul>
               </div>
             </div>
-            <!-- <div class="col-6"></div> -->
-            <!-- <div class="ft-bottom">
+            <div class="ft-bottom">
               <p class="text-center">
                 ©2023 made with Love by <a href="#">SKATRD.</a>
               </p>
-            </div> -->
+            </div>
           </div>
         </div>
       </footer>
@@ -208,9 +247,7 @@
           inertia: 0.9,
         });
       });
-    </script> -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-
+    </script>
     <script src="./script.js"></script>
   </body>
 </html>

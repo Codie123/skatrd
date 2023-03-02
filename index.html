@@ -29,8 +29,8 @@
     <title>Home</title>
   </head>
   <body>
-    <header class="header blur">
-      <nav class="navbar navbar-expand-lg">
+    <header class="header">
+      <nav class="navbar navbar-expand-lg blur">
         <div class="container">
           <a class="navbar-brand cuz-logo col-2 col-md" href="#">
             <img src="./logo.png" alt="" />
@@ -146,62 +146,74 @@
           </div>
         </section>
 
-        <section class="" data-scroll-section>
-          <div class="container">
-            <div class="row">
-              <div class="blog-cont">
-                <div class="col col-md-6 blog-banner">
-                  <img src="./assets/images/blog-banner.jpg" alt="" />
-                </div>
-
-                <div
-                  class="blog-details col-md-6 col"
-                  data-scroll
-                  data-scroll-speed="4"
-                >
-                  <h2>CARVED 002.</h2>
-                  <a href="#" class="cuz-btn"> View More </a>
-                </div>
+      <section data-scroll-section>
+        <div class="container">
+          <div class="row">
+            <div class="blog-cont">
+              <div class="blog-banner col-6" data-scroll data-scroll-speed="1">
+                <img src="./assets/images/blog-banner.jpg" alt="" />
               </div>
-            </div>
-          </div>
-        </section>
-        <footer data-scroll-section>
-          <div class="container-fluid" data-scroll>
-            <div class="row">
-              <div class="ft-cont">
-                <div class="ft-logo col-5">
-                  <img src="./logo.png" alt="" />
-                </div>
-                <div class="col-6 cuz-ft-flex">
-                  <ul>
-                    <h3>Help & Assistant</h3>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Collection</a></li>
-                    <li><a href="#">Contact</a></li>
-                  </ul>
-                  <ul>
-                    <h3>Follow Us</h3>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">SkatrdMedia</a></li>
-                  </ul>
-                </div>
-              </div>
-              <!-- <div class="col-6"></div> -->
-              <!-- <div class="ft-bottom">
-                <p class="text-center">
-                  ©2023 made with Love by <a href="#">SKATRD.</a>
+              <div class="blog-details col-6" data-scroll data-scroll-speed="1">
+                <h2>CARVED 002.</h2>
+                <p>
+                  We at SKATRD, are very excited to announce that we are
+                  launching our first CAPSULE COLLECTION named as CARVED 002.
+                  With our collection, we want to take you back to the old times
+                  where baggy, oversized, hip was a trendsetter. With keeping
+                  that in mind we carefully infused retro culture with the
+                  evolution of skateboards. A bit confusing right? Let me clear
+                  it for you guys.
                 </p>
-              </div> -->
+                <p>
+                  Our designs are created in a way which will give you the
+                  knowledge of the evolution of skateboarding. As we all know
+                  skateboarding started with nothing but a wooden plank, after
+                  the years of gaining the interest of the people skateboards
+                  started evolving keeping the comfort and the style hand in
+                  hand. With different years came different designs of the
+                  skateboards making it more creative and more comfortable to
+                  use. Every design was created in such a way that it goes well
+                  with the sport making it easy to ride and do tricks.
+                </p>
+              </div>
             </div>
           </div>
-        </footer>
-      </div>
+        </div>
+      </section>
+      <footer data-scroll-section>
+        <div class="container" data-scroll>
+          <div class="row">
+            <div class="ft-cont">
+              <div class="ft-logo col-3">
+                <img src="./logo.png" alt="" />
+              </div>
+              <div class="col-3"></div>
+              <div class="col-6 cuz-ft-nav">
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Collection</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+                <ul>
+                  <h3>Follow Us</h3>
+                  <li><a href="#">Instagram</a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">SkatrdMedia</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="ft-bottom">
+              <p class="text-center">
+                ©2023 made with Love by <a href="#">SKATRD.</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
 
     <script>
-      document.addEventListener("onscroll", function (event) {
+      document.addEventListener("DOMContentLoaded", function (event) {
         const scroll = new LocomotiveScroll({
           el: document.querySelector("[data-scroll-container]"),
           smooth: true,
