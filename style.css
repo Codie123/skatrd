@@ -220,7 +220,33 @@ header{
     padding: 1rem 1.5rem;
     border: 1px solid white;
     color: white;
+    position: relative;
+    overflow: hidden;
 }
+/* .size-table .s::after{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 135px;
+    background-color: tomato;
+    position: absolute;
+    top: -48px;
+    transform: rotate(-43deg);
+    left: 19px;
+
+}
+.size-table .s::before{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 103px;
+    background-color: tomato;
+    position: absolute;
+    transform: rotate(43deg);
+    top: -19px;
+    left: 31px;
+} */
+
 .pr-cont-image{
 display: grid;
 grid-template-columns: 539px 80px;

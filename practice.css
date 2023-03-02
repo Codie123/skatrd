@@ -1,0 +1,10 @@
+body {
+    background-color: rgb(255, 15, 15);
+    color: white;
+  }
+
+
+  .bg-color{
+    color: aqua;
+    background-color: black;
+  }

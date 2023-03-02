@@ -6,15 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <!-- locomotive -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css"
-    />
+
     <!-- <link rel="icon" type="image/png"  href="favicon.ico"> -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"
-      defer
-    ></script>
+
     <!-- ends -->
     <link
       rel="stylesheet"
@@ -30,7 +24,7 @@
     <title>Products</title>
   </head>
   <body>
-    <main class="cuz-main" data-scroll-container>
+    <main class="cuz-main">
       <header class="">
         <nav class="navbar navbar-expand-lg blur">
           <div class="container">
@@ -78,19 +72,14 @@
           <li class="items" id="skate">SKATE CHANGE LIFE</li>
         </ul>
       </div>
-      <section class="" data-scroll-section>
+      <section class="">
         <div class="container">
           <div class="row">
-            <div class="title" data-scroll>Product Collection</div>
+            <div class="title">Product Collection</div>
           </div>
           <div class="card-cont">
             <!-- carved -->
-            <div
-              class="card cuz-card carved"
-              data-scroll
-              data-scroll-speed="1"
-              data-scroll-direction="vertical"
-            >
+            <div class="card cuz-card carved">
               <a href="product-inner.html">
                 <img src="./assets/images/pr-1.jpg" alt="" />
               </a>
@@ -99,12 +88,7 @@
                 <p>Price</p>
               </div>
             </div>
-            <div
-              class="card cuz-card carved"
-              data-scroll
-              data-scroll-speed="1"
-              data-scroll-direction="vertical"
-            >
+            <div class="card cuz-card carved">
               <a href="product-inner.html">
                 <img src="./assets/images/pr-2.jpg" alt="" />
               </a>
@@ -113,12 +97,7 @@
                 <p>Price</p>
               </div>
             </div>
-            <div
-              class="card cuz-card carved"
-              data-scroll
-              data-scroll-speed="1"
-              data-scroll-direction="vertical"
-            >
+            <div class="card cuz-card carved">
               <a href="product-inner.html">
                 <img src="./assets/images/pr-3.jpg" alt="" />
               </a>
@@ -127,12 +106,7 @@
                 <p>Price</p>
               </div>
             </div>
-            <div
-              class="card cuz-card carved"
-              data-scroll
-              data-scroll-speed="1"
-              data-scroll-direction="vertical"
-            >
+            <div class="card cuz-card carved">
               <a href="product-inner.html">
                 <img src="./assets/images/pr-4.jpg" alt="" />
               </a>
@@ -142,12 +116,7 @@
               </div>
             </div>
             <!-- skate change life  -->
-            <div
-              class="card cuz-card skate"
-              data-scroll
-              data-scroll-speed="1"
-              data-scroll-direction="vertical"
-            >
+            <div class="card cuz-card skate">
               <a href="product-inner.html">
                 <img src="./assets/skate/DSC_2415.jpg" alt="" />
               </a>
@@ -156,12 +125,7 @@
                 <p>Price</p>
               </div>
             </div>
-            <div
-              class="card cuz-card skate"
-              data-scroll
-              data-scroll-speed="1"
-              data-scroll-direction="vertical"
-            >
+            <div class="card cuz-card skate">
               <a href="product-inner.html">
                 <img src="./assets/skate/fulls1.jpg" alt="" />
               </a>
@@ -170,12 +134,7 @@
                 <p>Price</p>
               </div>
             </div>
-            <div
-              class="card cuz-card skate"
-              data-scroll
-              data-scroll-speed="1"
-              data-scroll-direction="vertical"
-            >
+            <div class="card cuz-card skate">
               <a href="product-inner.html">
                 <img src="./assets/skate/nc3.jpg" alt="" />
               </a>
@@ -184,12 +143,7 @@
                 <p>Price</p>
               </div>
             </div>
-            <div
-              class="card cuz-card skate"
-              data-scroll
-              data-scroll-speed="1"
-              data-scroll-direction="vertical"
-            >
+            <div class="card cuz-card skate">
               <a href="product-inner.html">
                 <img src="./assets/skate/re1.jpg" alt="" />
               </a>
@@ -198,12 +152,7 @@
                 <p>Price</p>
               </div>
             </div>
-            <div
-              class="card cuz-card skate"
-              data-scroll
-              data-scroll-speed="1"
-              data-scroll-direction="vertical"
-            >
+            <div class="card cuz-card skate">
               <a href="product-inner.html">
                 <img src="./assets/skate/t2.jpg" alt="" />
               </a>
@@ -216,8 +165,8 @@
         </div>
       </section>
 
-      <footer data-scroll-section>
-        <div class="container-fluid" data-scroll>
+      <footer>
+        <div class="container-fluid">
           <div class="row">
             <div class="ft-cont">
               <div class="ft-logo col-5">
@@ -249,7 +198,7 @@
       </footer>
     </main>
 
-    <script>
+    <!-- <script>
       document.addEventListener("DOMContentLoaded", function (event) {
         const scroll = new LocomotiveScroll({
           el: document.querySelector("[data-scroll-container]"),
@@ -258,7 +207,7 @@
           inertia: 0.9,
         });
       });
-    </script>
+    </script> -->
     <script src="./script.js"></script>
   </body>
 </html>
