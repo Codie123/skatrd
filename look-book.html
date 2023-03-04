@@ -6,15 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <!-- locomotive -->
-    <!-- <link
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css"
-    /> -->
+    />
+
     <!-- <link rel="icon" type="image/png"  href="favicon.ico"> -->
-    <!-- <script
-      src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"
-      defer
-    ></script> -->
     <!-- ends -->
     <link
       rel="stylesheet"
@@ -37,18 +34,14 @@
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
+
     <!-- ends -->
     <script src="./script.js" defer></script>
     <title>LOOK BOOK</title>
   </head>
   <body>
-    <main class="cuz-main">
-      <header class="">
+    <main class="cuz-main" data-scroll-container>
+      <header class="cuz-p-unset" data-scroll-section>
         <nav class="navbar navbar-expand-lg blur">
           <div class="container">
             <a class="navbar-brand cuz-logo col-2 col-md" href="#">
@@ -86,35 +79,115 @@
           </div>
         </nav>
       </header>
-      <section class="cuz-mt">
+
+      <section class="cuz-mt" data-scroll-section>
         <div class="container">
-          <div class="row cuz-grid">
-            <div class="it">
-              <img src="./assets/images/pr-1.jpg" alt="" />
+          <div class="row look-book-flex">
+            <div
+              class="col col-md-6 cuz-h-img"
+              data-scroll
+              data-scroll-direction="vertical"
+              data-scroll-speed="1"
+            >
+              <img src="./assets/skate/fulls1.jpg" alt="" />
             </div>
-            <div class="it">
-              <img src="./assets/images/pr-2.jpg" alt="" />
-            </div>
-            <div class="it">
-              <img src="./assets/images/pr-3.jpg" alt="" />
-            </div>
-            <div class="it">
-              <img src="./assets/images/pr-4.jpg" alt="" />
-            </div>
-            <div class="it">
-              <img src="./assets/images/pr-5.jpg" alt="" />
+
+            <div class="col col-md-6 cuz-flex cuz-jf-c cuz-p">
+              <div
+                class="cont-up"
+                data-scroll
+                data-scroll-direction="vertical"
+                data-scroll-speed="2"
+              >
+                <h1>23</h1>
+
+                <h2>FEB <span>23</span></h2>
+
+                <p>Transeasonal Collection</p>
+              </div>
+
+              <h2
+                class="h2"
+                data-scroll
+                data-scroll-direction="vertical"
+                data-scroll-speed="-4"
+              >
+                LOOKBOOK
+              </h2>
             </div>
           </div>
         </div>
       </section>
+
+      <section class="cuz-mt" data-scroll-section>
+        <div class="container">
+          <div class="row cuz-row-re look-book-flex">
+            <div class="col col-md-6 cuz-h-img" data-scroll>
+              <img
+                src="./assets/skate/re1.jpg"
+                alt=""
+                data-scroll
+                data-scroll-speed="1"
+                data-scroll-direction="vertical"
+              />
+            </div>
+            <div
+              class="col col-md-6 cuz-skate cuz-flex cuz-jf-c gap-5"
+              data-scroll
+            >
+              <div class="col-4 cuz-intro">
+                <h1>Skate Change <span>Life.</span></h1>
+              </div>
+              <div class="story">
+                Presenting you with the SKATRD transeasonal collection "SKATE
+                CHANGE LIFE" which comes with a line of baggy, casual and hard
+                wear clothing. This new skate wear collection of SKATRD consists
+                of 5 looks which are comfy, stylish and comes with utility in
+                every product.It is a representation of the culture which talks
+                about being free, comfortable, unique and creative, Transeasonal
+                skate pants, oversized shirts and shackets are done in a mix of
+                technical and classic materials like cotton, denims, corduroy
+                and flannel . AS for skate wear it comes with an amazing quality
+                of being durable , so you can fall as many times as you want
+                without thinking about the clothes getting torn off.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cuz-mt" data-scroll-section>
+        <div class="container">
+          <div class="row look-book-flex">
+            <div class="col col-md-6 product" data-scroll>
+              <h1>S-424 DENIM</h1>
+
+              <ul>
+                <li>
+                  <span>P O C K E T S :</span> 4 OVERSIZED POCKETS - 2 PATCH
+                  POCKET ON THE BACK -2 BOXY PATCH POCKET IN THE FRONT
+                </li>
+                <li><span>L O G O :</span> PATCH LOGO ON THE BACK POCKET</li>
+                <li><span>F I T :</span> STRAIGHT BAGGY</li>
+                <li><span>C O L O U R :</span> BLUE</li>
+                <li><span>F A B R I C :</span> DENIM</li>
+              </ul>
+            </div>
+            <div class="col col-md-6 cuz-h-img">
+              <img src="./assets/skate/nc3.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <footer data-scroll-section>
         <div class="container-fluid" data-scroll>
           <div class="row">
             <div class="ft-cont">
-              <div class="ft-logo col-5">
+              <div class="ft-logo col col-md-5">
                 <img src="./logo.png" alt="" />
               </div>
-              <div class="col-6 cuz-ft-flex">
+              <div class="col col-md-6 cuz-ft-flex">
                 <ul>
                   <h3>Help & Assistant</h3>
                   <li><a href="#">Home</a></li>
@@ -131,13 +204,26 @@
             </div>
             <!-- <div class="col-6"></div> -->
             <!-- <div class="ft-bottom">
-              <p class="text-center">
-                ©2023 made with Love by <a href="#">SKATRD.</a>
-              </p>
-            </div> -->
+                <p class="text-center">
+                  ©2023 made with Love by <a href="#">SKATRD.</a>
+                </p>
+              </div> -->
           </div>
         </div>
       </footer>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+
+    <!-- <script>
+      document.addEventListener("scroll", () => {
+        const scroll = new LocomotiveScroll({
+          el: document.querySelector("[data-scroll-container]"),
+          smooth: true,
+          // lerp: 0.1,
+          inertia: 0.9,
+        });
+      });
+      //
+    </script> -->
   </body>
 </html>
