@@ -2736,14 +2736,89 @@
   
   /* ====================== [ End call-action ] ====================== */
   /* ====================== [ 21 Start Fotter ] ====================== */
-  .footer-sm {
+  /* .footer-sm {
     background: #060606;
     padding: 40px 0; }
     .footer-sm.light {
       background: #fff; }
     .footer-sm .right p {
       margin-left: auto;
-      text-align: right; }
+      text-align: right; } */
+
+      footer{
+        background-color: #181818;
+        padding: 2rem 1rem;
+    }
+    .ft-cont{
+        display: flex;
+        justify-content: space-between;
+    }
+    .ft-logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .ft-logo img{
+        width: 100%;
+        filter: invert(1);
+    }
+    .cuz-ft-nav{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 1rem 0;
+    }
+    .cuz-ft-nav ul li a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    .cuz-ft-nav ul h3{
+        color: white;
+    }
+    .ft-bottom p {
+        color: white;
+    }
+    .cuz-ft-flex{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .cuz-ft-flex h3{
+        color: white;
+        font-size: 1.5em;
+    }
+    .cuz-ft-flex ul{
+        font-family: var(--font-book);
+        padding: 0;
+    }
+    .cuz-ft-flex ul li {
+        list-style-type: none;
+    }
+    .cuz-ft-flex ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: .9em;
+        font-weight: 200;
+    }
+    .cuz-ft-flex ul li a:hover{
+        color: #b4b4b4;
+    }
+    @media(max-width:480px){
+        .ft-cont{
+          flex-direction: column;
+          gap: 4rem;
+          align-items: center;
+        }
+        .cuz-ft-flex{
+          flex-direction: column;
+          align-items: center;
+      
+        }
+        .cuz-ft-flex ul{
+          text-align: center;
+        }
+      }
   
   /* ====================== [ End Footer ] ====================== */
   /* ====================== [ 22 Start Dark-Theme ] ====================== */

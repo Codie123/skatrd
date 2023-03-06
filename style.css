@@ -1,17 +1,32 @@
 
 @font-face {
-    font-family: 'Avenir Roman';
+    font-family: 'Avenir Black';
     font-style: normal;
     font-weight: normal;
-    src: local('Avenir Roman'), url('./font/avenir_roman_12.woff') format('woff');
+    src: local('Avenir Black'), url('./font/AvenirLTStd-Black.woff') format('woff');
     }
-
+    @font-face {
+        font-family: 'Avenir Book';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Avenir Book'), url('./font/AvenirLTStd-Book.woff') format('woff');
+        }
+    @font-face {
+        font-family: 'Avenir Roman';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Avenir Roman'), url('./font/AvenirLTStd-Roman.woff') format('woff');
+        }
 :root{
-    --background-blur:blur(16px !important);
-    --bg-primary:white;
+    --background-blur:blur(10px !important);
+    --bg-primary:#fafafa;
     --primary-text:black;
-    --secondary-text:white;
-    --primary-font:"Avenir Roman"
+    --secondary-text:rgb(9, 9, 9);
+    --primary-font:"Avenir Roman";
+    --font-book:"Avenir Book";
+    --font-black:"Avenir Black "
+
+    
 }
 
 body{
@@ -36,6 +51,7 @@ header{
     height: 10vh;
     position: fixed;
     z-index: 100;
+    font-family: var(--font-book);
 
 }
 .navbar{
@@ -44,8 +60,8 @@ header{
 
 }
  .blur{
-    background: rgba(17, 24, 39, 0.5)!important; 
-    backdrop-filter: blur(29px) !important;
+    background:rgb(255 255 255 / 30%)!important; 
+    backdrop-filter: blur(6px) !important;
 }
 /* navbar section  */
 .navbar-nav{
@@ -103,7 +119,7 @@ header{
 /* ends */
 .cuz-logo img{
     width: 30%;
-    filter: invert(1);
+    /* filter: invert(1); */
 }
 @media(max-width:800px){
     .cuz-logo img{
@@ -135,11 +151,13 @@ header{
 }
 .cuz-card{
     background: none !important;
+    font-family: var(--primary-font);
+    
 }
 .card-cont{
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-between;
+    justify-content:center;
     padding: 2rem 0;
     gap: 1rem;
 }
@@ -163,7 +181,7 @@ header{
 }
 
 .details p {
-    color: #fcb30f;
+    color: #585345;
 }
 .blog-cont{
     display: flex;
@@ -212,8 +230,8 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center
-    ;
+    justify-content: center;
+    gap: 1.5rem;
 }
 .pr-model{
     font-size: 1em;
@@ -222,6 +240,7 @@ header{
 }
 .pr-name{
     color: var(--primary-text);
+    font-weight: 800;
 }
 .size-table{
     display: flex;
@@ -360,6 +379,7 @@ footer{
     font-size: 1.5em;
 }
 .cuz-ft-flex ul{
+    font-family: var(--font-book);
     padding: 0;
 }
 .cuz-ft-flex ul li {
@@ -523,7 +543,8 @@ footer{
     z-index: 120;
 }
 .categories h2{
-    color: white;
+    color: #c1c1c1;
+    margin: 0;
 }
 .categories ul{
     padding: 0;
@@ -534,12 +555,12 @@ footer{
     list-style-type: none;
 }
 .categories ul li{
-    color: #fcb30f;
+    color: #a0a0a0;
     padding: 0.5rem 1rem;
     cursor: pointer;
 }
 .add{
-    background: grey;
+    background: rgb(0, 0, 0);
     border-radius: 20px;
 }
 
@@ -586,9 +607,7 @@ footer{
     width: 100%;
 }
 .cuz-p .h2{
-    /* position: absolute; */
-    bottom: 0;
-    right: 0;
+   font-weight: 700;
 }
 .cuz-intro {
     margin-inline: auto;
@@ -598,6 +617,71 @@ footer{
         line-height: .8;
         font-weight: 900;
         font-size: 3.5rem;
+}
+
+.cont-up h1{
+    font-weight: 700;
+    font-size: 3.5em;
+    transform: scale(1) translate(-4px, 29px);
+}
+.cont-up h2{
+    letter-spacing: 8px;
+    margin: 0;
+}
+.cont-up h2 span{
+    font-size: 1.5em;
+    transform: translate(-7px, 0px);
+    display: inline-block;
+}
+.cont-up p{
+    font-style: italic;
+    margin-bottom: 0;
+    transform: translateY(-3px);
+}
+.pr-details{
+    display: flex;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    border: 1px solid;
+}
+.pr-details h3{
+    font-size: 1.5em;
+    letter-spacing: -1px;
+    font-weight: 700;
+    border-right: 1px solid;
+    margin: 0;
+    padding: 1rem 0 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@media(max-width:465px){
+    .pr-details h3{
+        border-right: 0;
+        border-bottom: 1px solid ;
+    }
+}
+.price{
+    font-family: var(--primary-font);
+    font-weight: 700;
+}
+.price span{
+    font-family: var(--font-book);
+    font-weight: 500;
+    font-size: 2em;
+    margin-left: 1rem;
+}
+@media(max-width:465px){
+    .pr-details{
+        flex-direction: column;
+    }
+}
+@media(max-width:426px){
+    .cuz-intro h1{
+        width: 50%;
+        margin-inline: auto;
+    }
 }
 .cuz-intro h1 span{
     color: #fcb30f;
@@ -617,8 +701,13 @@ footer{
     font-weight: 700;
     margin-bottom: 2rem;
 }
+
 .product ul{
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 1rem;
 }
 .product ul li span{
     font-size: 1.5em;
@@ -631,6 +720,7 @@ footer{
         justify-content: center;
     }
 }
+
 /* ends */
 
 
@@ -641,7 +731,33 @@ footer{
 
 
 
+/* custome scroll bar */
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #8f54a0 #ffffff;
+  }
 
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    opacity: .5;
+
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #5252529c;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #2d2d2d;
+    border-radius: 10px;
+    height: 4rem;
+    border: 3px solid #ffffff00;
+  }
+/* ends */
 
 
 
@@ -683,6 +799,9 @@ footer{
 }
 .cuz-p-unset{
     position: unset;
+}
+.cuz-tf-end{
+    text-align: end;
 }
 /* ends */
 

@@ -27,6 +27,8 @@ function showActive(newmenubtn) {
   card.forEach((card) => {
     if (card.classList.contains(activeBtn)) {
       card.style.display = "flex";
+    } else if (activeBtn == "all") {
+      card.style.display = "flex";
     } else {
       card.style.display = "none";
     }
