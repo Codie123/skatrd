@@ -6,7 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../contact-style.css" />
-
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ends -->
     <!-- email.js -->
     <script
       type="text/javascript"
@@ -28,23 +36,32 @@
     <title>Oversized Band Collar Shirt With Zipper</title>
   </head>
   <body>
-    <main class="cuz-main">
-      <header class="">
-        <nav class="navbar navbar-expand-lg blur">
+    <main class="cuz-main w">
+      <header class="header">
+        <nav class="navbar navbar-expand-lg">
           <div class="container">
             <a class="navbar-brand cuz-logo col-2 col-md" href="#">
-              <img src="../logo.png" alt="" />
+              <img src="../logo.png" alt="" style="filter: invert(0)" />
             </a>
             <button
-              class="navbar-toggler cuz-nav-toggle"
+              class="navbar-toggler cuz-nav-toggle collapsed"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNav"
               aria-controls="navbarNav"
               aria-expanded="false"
               aria-label="Toggle navigation"
+              style="
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                gap: 5px;
+              "
             >
-              <span class="navbar-toggler-icon"></span>
+              <span class=""></span>
+              <span class=""></span>
+              <span class=""></span>
             </button>
             <div class="collapse navbar-collapse cuz-jf-end" id="navbarNav">
               <ul class="navbar-nav">
@@ -62,6 +79,9 @@
                   <a href="../look-book.html" class="nav-link">Look Book</a>
                 </li>
                 <li class="nav-item">
+                  <a href="../film.html" class="nav-link">Film</a>
+                </li>
+                <li class="nav-item">
                   <a class="nav-link" href="../contact.html">Contact</a>
                 </li>
               </ul>
@@ -69,10 +89,10 @@
           </div>
         </nav>
       </header>
-      <section class="cuz-mt">
+      <section class="cuz-mt cuz-md-m">
         <div class="container">
-          <div class="row">
-            <div class="col-6 cuz-flex">
+          <div class="row cuz-md-flex">
+            <div class="col-md-6 cuz-flex">
               <div class="content-I">
                 <h1 class="pr-name">OVERSIZED BAND COLLAR SHIRT WITH ZIPPER</h1>
                 <div class="price">
@@ -87,24 +107,33 @@
                 <h3 class="size" data-size="xxl">XXL</h3>
               </div>
               <p>
-                product description goes here hjuchjncd did soon busy login and
-                su oof social of sundri lokalbewusst the fuck hairstyle food
-                since RS ah if govi ush if chai if dismissal occurs Shani kaise
+                Our series of oversized shirts has a new design, this time it
+                has a band collar with zipper. It has a slit double stitch
+                detail with 2 symmetrical patch pockets in the front. The SKATRD
+                patch logo detail is given at the left chest. It gives an
+                oversized boxy fit.
               </p>
+              <ul class="cuz-ul">
+                <li>FABRIC: 98% COTTON, 2% LYCRA</li>
+                <li>POCKETS: 2 SYMMETRICAL POCKETS IN FRONT</li>
+                <li>LOGO: PATCH LOGO ON THE LEFT CHEST SIDE</li>
+                <li>FIT: BOXY</li>
+                <li>COLOUR: SERENITY</li>
+              </ul>
             </div>
-            <div class="col-6">
+            <div class="col-md-6">
               <div class="swiper">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                   <!-- Slides -->
                   <div class="swiper-slide">
-                    <img src="../assets/skate/5.jpg" alt="" />
+                    <img src="../assets/images/t2.jpg" alt="" />
                   </div>
                   <div class="swiper-slide">
-                    <img src="../assets/skate/5.jpg" alt="" />
+                    <img src="../assets/images/t3.jpg" alt="" />
                   </div>
                   <div class="swiper-slide">
-                    <img src="../assets/skate/5.jpg" alt="" />
+                    <img src="../assets/images/t4.jpg" alt="" />
                   </div>
                   ...
                 </div>
@@ -151,16 +180,9 @@
                   </div>
                   <div class="form-group">
                     <select name="categories" id="product">
-                      <option value="product1">Product1</option>
-                      <option value="product2">Product2</option>
-                      <option value="product3">Product3</option>
-                      <option value="product4">Product4</option>
-                      <option value="product5">Product5</option>
-                      <option value="product6">Product6</option>
-                      <option value="product7">Product7</option>
-                      <option value="product8">Product8</option>
-                      <option value="product9">Product9</option>
-                      <option value="product10">Product10</option>
+                      <option value="product10" selected>
+                        OVERSIZED BAND COLLAR SHIRT WITH ZIPPER
+                      </option>
                     </select>
                   </div>
                   <div class="form-group">
@@ -203,30 +225,47 @@
         <div class="container-fluid" data-scroll>
           <div class="row">
             <div class="ft-cont">
-              <div class="ft-logo col col-md-5">
+              <div class="ft-logo col col-md-3">
                 <img src="../logo.png" alt="" />
               </div>
               <div class="col col-md-6 cuz-ft-flex">
                 <ul>
                   <h3>Help & Assistant</h3>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Collection</a></li>
-                  <li><a href="#">Contact</a></li>
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="../product-list.html">Collection</a></li>
+                  <li><a href="../look-book.html">Look Book</a></li>
+                  <li><a href="../film.html">Film</a></li>
+                  <li><a href="../contact.html">Contact</a></li>
+                  <li><a href="#">Terms & Condition</a></li>
                 </ul>
                 <ul>
                   <h3>Follow Us</h3>
-                  <li><a href="#">Instagram</a></li>
-                  <li><a href="#">Twitter</a></li>
-                  <li><a href="#">SkatrdMedia</a></li>
+                  <div class="social-flex">
+                    <li>
+                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                  </div>
                 </ul>
               </div>
             </div>
             <!-- <div class="col-6"></div> -->
             <!-- <div class="ft-bottom">
-                <p class="text-center">
-                  ©2023 made with Love by <a href="#">SKATRD.</a>
-                </p>
-              </div> -->
+              <p class="text-center">
+                ©2023 made with Love by <a href="#">SKATRD.</a>
+              </p>
+            </div> -->
           </div>
         </div>
       </footer>

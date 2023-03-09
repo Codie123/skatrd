@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ends -->
     <!-- locomotive -->
     <link
       rel="stylesheet"
@@ -36,21 +45,30 @@
   </head>
   <body>
     <header class="header">
-      <nav class="navbar navbar-expand-lg blur">
+      <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand cuz-logo col-2 col-md" href="#">
             <img src="./logo.png" alt="" />
           </a>
           <button
-            class="navbar-toggler cuz-nav-toggle"
+            class="navbar-toggler cuz-nav-toggle collapsed"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
             aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            style="
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: center;
+              gap: 5px;
+            "
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class=""></span>
+            <span class=""></span>
+            <span class=""></span>
           </button>
           <div class="collapse navbar-collapse cuz-jf-end" id="navbarNav">
             <ul class="navbar-nav">
@@ -64,6 +82,9 @@
               </li>
               <li class="nav-item">
                 <a href="look-book.html" class="nav-link">Look Book</a>
+              </li>
+              <li class="nav-item">
+                <a href="film.html" class="nav-link">Film</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact</a>
@@ -154,45 +175,24 @@
 
         <section class="" data-scroll-section>
           <div class="container">
-            <div class="row">
-              <div class="swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="blog-cont">
-                      <div class="col col-md-6 blog-banner">
-                        <img src="./assets/images/blog-banner.jpg" alt="" />
-                      </div>
-
-                      <div
-                        class="blog-details col-md-6 col"
-                        data-scroll
-                        data-scroll-speed="4"
-                      >
-                        <h2>CARVED 002.</h2>
-                        <a href="#" class="cuz-btn"> View More </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="blog-cont">
-                      <div class="col col-md-6 blog-banner">
-                        <img src="./assets/Look-book/STRIPE.jpg" alt="" />
-                      </div>
-
-                      <div
-                        class="blog-details col-md-6 col"
-                        data-scroll
-                        data-scroll-speed="4"
-                      >
-                        <h2>CARVED 002.</h2>
-                        <a href="#" class="cuz-btn"> View More </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+            <div class="">
+              <div class="col cuz-pb">
+                <h1>Who We Are</h1>
+              </div>
+              <div class="col cuz-pb">
+                <p>
+                  "PROJECT SKATRD" IS AN INITIATIVE BY SKATRD, THAT BLENDS OUR
+                  PASSION FOR STREETWEAR AND SKATEBOARDING. CATERING TO THE
+                  SEASON-FLUID AND MASSIVELY GROWING TRENDS, WE AT SKATRD ARE
+                  HERE TO MAKE SURE THAT WE PROVIDE THE VALUES THAT THE SPORT
+                  DEMANDS. SKATRD FOCUSES NOT ONLY ON THE SKATEBOARDING
+                  COMMUNITY, THAT RESIDES IN THE DEEPEST POCKETS OF THE NATION
+                  BUT ALSO SERVES YOUR LOVE FOR STREETWEAR. WE WANT EVERYONE TO
+                  BE AS CLOSE AND CONNECTED TO THE SKATEBOARDING CULTURE AS WE
+                  ARE. IT'S A BRAND WHICH BRINGS US ALL TOGETHER, REGARDLESS OF
+                  WHAT WE DO IN OUR DAILY LIVES. OUR LINE OF CLOTHING IS AIMED
+                  AT PRESENTING A DEEPER INSIGHT INTO THE CULTURE.
+                </p>
               </div>
             </div>
           </div>
@@ -201,7 +201,7 @@
           <div class="container-fluid" data-scroll>
             <div class="row">
               <div class="ft-cont">
-                <div class="ft-logo col col-md-5">
+                <div class="ft-logo col col-md-3">
                   <img src="./logo.png" alt="" />
                 </div>
                 <div class="col col-md-6 cuz-ft-flex">
@@ -210,12 +210,27 @@
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Collection</a></li>
                     <li><a href="#">Contact</a></li>
+                    <li><a href="#">Terms & Condition</a></li>
                   </ul>
                   <ul>
                     <h3>Follow Us</h3>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">SkatrdMedia</a></li>
+                    <div class="social-flex">
+                      <li>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                      </li>
+                    </div>
                   </ul>
                 </div>
               </div>

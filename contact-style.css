@@ -1,9 +1,57 @@
+@font-face {
+  font-family: 'Eastman Heavy';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Eastman Heavy'), url('./font/eastman/AnyConv.com__EastmanRomanTrial-Heavy.woff') format('woff');
+  }
 
+  @font-face {
+      font-family: 'Eastman Bold';
+      font-style: normal;
+      font-weight: normal;
+      src: local('Eastman Bold'), url('./font/eastman/AnyConv.com__EastmanRomanTrial-Bold.woff') format('woff');
+      }
+
+
+@font-face {
+  font-family: 'Avenir Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Black'), url('./font/AvenirLTStd-Black.woff') format('woff');
+  }
+  @font-face {
+      font-family: 'Avenir Book';
+      font-style: normal;
+      font-weight: normal;
+      src: local('Avenir Book'), url('./font/AvenirLTStd-Book.woff') format('woff');
+      }
+  @font-face {
+      font-family: 'Avenir Roman';
+      font-style: normal;
+      font-weight: normal;
+      src: local('Avenir Roman'), url('./font/AvenirLTStd-Roman.woff') format('woff');
+      }
 :root{
-  --background-blur:blur(16px !important);
-  --bg-primary:white;
+  --background-blur:blur(10px !important);
+  --bg-primary:#fafafa;
   --primary-text:black;
+  --secondary-text:rgb(9, 9, 9);
+  --primary-font:"Avenir Roman";
+  --font-book:"Avenir Book";
+  --font-black:"Avenir Black ";
+  /* east man fotn */
+  --east-bold:'Eastman Heavy';
+  --east-bold-II:"Eastman Bold";
+
+  
 }
+
+
+
+
+
+
+
 /* ====================== [ 01 Start Basics ] ====================== */
 * {
     margin: 0;
@@ -19,7 +67,7 @@
     line-height: 1.3;
     font-weight: 400;
     font-size: 14px;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--primary-font) !important;
     overflow-x: hidden; }
   
   .main-content {
@@ -29,7 +77,7 @@
     z-index: 3; }
   
   p {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--primary-font);
     font-size: 15px;
     font-weight: 400;
     color: #888;
@@ -51,15 +99,15 @@
     padding: 120px 0; }
   
   .ubuntu {
-    font-family: 'Ubuntu', sans-serif; }
+    font-family: var(--primary-font) }
   
   .nmb-font {
-    font-family: 'Roboto Mono', monospace;
+    font-family: var(--primary-font);
     font-weight: 700; }
   
   .sub-title {
     color: #212529;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: var(--primary-font);
     font-size: 13px;
     font-weight: 500;
     letter-spacing: 3px;
@@ -106,7 +154,7 @@
     margin-bottom: 80px; }
     .section-head h6 {
       font-size: 13px;
-      font-family: 'Ubuntu', sans-serif;
+      font-family: var(--primary-font);
       font-weight: 500;
       letter-spacing: 3px;
       text-transform: uppercase;
@@ -244,7 +292,7 @@
         transition-delay: 1s; }
   
   .loading-text {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: var(--primary-font);
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 10px;
@@ -1087,17 +1135,17 @@
     transition-delay: .8s; }
   
   .page-header {
-    background: var(--bg-primary);
+    background:var(--bg-primary);
     color: var(--primary-text); }
     .page-header .cont {
-      padding: 220px 0 120px; }
+      padding: 150px 0 0px; }
       .page-header .cont h4 {
+        font-family: var(--font-book);
         line-height: 1.6; }
         .page-header .cont h4 .stroke {
           font-weight: 900;
-          -webkit-text-stroke-width: 1px;
-          -webkit-text-stroke-color: var(--primary-text);
-          color: transparent; }
+          font-family: var(--primary-font);
+          color: black; }
     .page-header .img-wrapper {
       position: relative;
       min-height: 70vh; }
@@ -1109,20 +1157,22 @@
         text-align: right;
         -webkit-transform: translateY(-55%);
         -ms-transform: translateY(-55%);
-        transform: translateY(-97%);
+        transform: translateY(-43%);
         z-index: 3; }
         .page-header .img-wrapper .title h3 {
           font-size: 100px;
           font-weight: 900;
-          -webkit-text-stroke-width: 1px;
-          -webkit-text-stroke-color: var(--primary-text);
-          color: transparent; }
+          font-family: var(--east-bold-II);
+         
+          color: black; }
       .page-header .img-wrapper .map {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%; }
+        height: 100%; 
+      margin-top: 11rem;
+      }
     .page-header.proj-det .img-wrapper {
       min-height: 80vh; }
     .page-header.blg .cont {
@@ -2348,6 +2398,7 @@
       border-bottom: 1px solid #bababa; }
   
   .blog-pg .posts .item .content {
+    flex-shrink: 1;
     padding-top: 25px; }
     .blog-pg .posts .item .content .tags {
       margin-bottom: 10px; }
@@ -2582,6 +2633,7 @@
   
   .contact .cont-info .extra-title {
     font-size: 28px;
+    font-family: var(--font-book);
     margin-bottom: 15px; }
   
   .contact .cont-info h5 {
@@ -2590,12 +2642,13 @@
     font-weight: 400;
    }
    .contact .cont-info h5 a{
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
    }
   
     .contact .cont-info h5:last-of-type {
       color: #222;
+      font-family: var(--primary-font);
       font-weight: 800; }
   
   .contact .cont-info h6 {
@@ -2780,7 +2833,7 @@
     }
     .cuz-ft-flex{
         display: flex;
-        align-items: flex-end;
+        align-items: flex-start;
         justify-content: center;
         gap: 2rem;
     }
@@ -3352,7 +3405,7 @@
   }
   /* navbar section  */
   .navbar-nav{
-    gap: 2rem   ;
+    /* gap: 2rem   ; */
   }
   .navbar-toggler{
     border: none !important;
@@ -3378,7 +3431,7 @@
     border: none !important;
   }
   .cuz-nav-toggle span{
-    filter: invert(1) !important;
+    /* filter: invert(1) !important; */
   }
   
   .cuz-logo img{
@@ -3464,7 +3517,7 @@
   }
   .cuz-ft-flex{
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: center;
   }
   
@@ -3493,10 +3546,27 @@
   }
   /* ends */
   
+
+  /* film styles  */
+  .cuz-title{
+    padding: 0 0 3rem 0;
+    justify-content: flex-start;
+  }
+  .cuz-title a{
+    text-decoration: none;
+    color: black;
+  }
+  .cuz-title a:hover{
+    color: #333;
+  }
+  /* ends */
   /* custome helpers */
   
   /* helper  */
   
+  .cuz-mt-8{
+    margin-top: 8rem;
+  }
   .cuz-bt{
     margin-bottom: 9rem;
   }

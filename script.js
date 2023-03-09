@@ -49,3 +49,25 @@ sizes.forEach((x) => {
   });
 });
 // ends
+
+// customized hamburger
+const head = document.querySelector(".header");
+const hamMenu = document.querySelector(".navbar-toggler");
+const navbar = document.querySelector(".navbar");
+window.addEventListener("scroll", () => {
+  if (scrollY > 100) {
+    console.log("hello");
+    head.classList.add("v-none");
+  } else if (scrollY < 100) {
+    head.classList.remove("v-none");
+  }
+});
+hamMenu.addEventListener("click", () => {
+  if (navbar.classList.contains("black")) {
+    navbar.classList.remove("black");
+  } else {
+    navbar.classList.add("black");
+  }
+});
+
+// films

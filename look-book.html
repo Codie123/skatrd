@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ends -->
     <!-- locomotive -->
     <link
       rel="stylesheet"
@@ -40,23 +49,32 @@
     <title>LOOK BOOK</title>
   </head>
   <body>
-    <main class="cuz-main" data-scroll-container>
-      <header class="cuz-p-unset" data-scroll-section>
-        <nav class="navbar navbar-expand-lg blur">
+    <main class="cuz-main w" data-scroll-container>
+      <header class="header">
+        <nav class="navbar navbar-expand-lg">
           <div class="container">
             <a class="navbar-brand cuz-logo col-2 col-md" href="#">
-              <img src="./logo.png" alt="" />
+              <img src="./logo.png" alt="" style="filter: invert(0)" />
             </a>
             <button
-              class="navbar-toggler cuz-nav-toggle"
+              class="navbar-toggler cuz-nav-toggle collapsed"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNav"
               aria-controls="navbarNav"
               aria-expanded="false"
               aria-label="Toggle navigation"
+              style="
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                gap: 5px;
+              "
             >
-              <span class="navbar-toggler-icon"></span>
+              <span class=""></span>
+              <span class=""></span>
+              <span class=""></span>
             </button>
             <div class="collapse navbar-collapse cuz-jf-end" id="navbarNav">
               <ul class="navbar-nav">
@@ -70,6 +88,9 @@
                 </li>
                 <li class="nav-item">
                   <a href="look-book.html" class="nav-link active">Look Book</a>
+                </li>
+                <li class="nav-item">
+                  <a href="film.html" class="nav-link">Film</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="contact.html">Contact</a>
@@ -134,9 +155,8 @@
               class="col col-lg-6 cuz-skate cuz-flex cuz-jf-c gap-5"
               data-scroll
             >
-              <div class="col-md-4 cuz-intro">
-                <h1>Skate Change <span>Life.</span></h1>
-              </div>
+              <h1 class="col-3">Skate Change <span>Life.</span></h1>
+              <div class="col-md-4 cuz-intro"></div>
               <div class="story">
                 Presenting you with the SKATRD transeasonal collection "SKATE
                 CHANGE LIFE" which comes with a line of baggy, casual and hard
@@ -158,39 +178,38 @@
       <section class="cuz-mt" data-scroll-section>
         <div class="container-lg container-fluid">
           <div class="row look-book-flex">
+            <h1>S-424 DENIM</h1>
             <div class="col col-lg-6 product" data-scroll>
-              <h1>S-424 DENIM</h1>
-
               <div class="pr-details">
                 <h3 class="col-md-4 col">POCKETS:</h3>
                 <ul class="col-md-7 col">
-                  <li>-4 OVERSIZED POCKETS</li>
-                  <li>- 2 PATCH POCKET ON THE BACK</li>
-                  <li>-2 BOXY PATCH POCKET IN THE FRONT</li>
+                  <li>4 OVERSIZED POCKETS</li>
+                  <li>2 PATCH POCKET ON THE BACK</li>
+                  <li>2 BOXY PATCH POCKET IN THE FRONT</li>
                 </ul>
               </div>
               <div class="pr-details">
                 <h3 class="col-md-4 col">LOGO:</h3>
                 <ul class="col-md-7 col">
-                  <li>-PATCH LOGO ON THE BACK POCKET</li>
+                  <li>PATCH LOGO ON THE BACK POCKET</li>
                 </ul>
               </div>
               <div class="pr-details">
                 <h3 class="col-md-4 col">FIT:</h3>
                 <ul class="col-md-7 col">
-                  <li>-STRAIGHT BAGGY</li>
+                  <li>STRAIGHT BAGGY</li>
                 </ul>
               </div>
               <div class="pr-details">
                 <h3 class="col-md-4 col">COLOUR:</h3>
                 <ul class="col-md-7 col">
-                  <li>-BLUE</li>
+                  <li>BLUE</li>
                 </ul>
               </div>
               <div class="pr-details">
                 <h3 class="col-md-4 col">FABRIC:</h3>
                 <ul class="col-md-7 col">
-                  <li>-DENIM</li>
+                  <li>DENIM</li>
                 </ul>
               </div>
             </div>
@@ -203,40 +222,39 @@
       <section class="cuz-mt" data-scroll-section>
         <div class="container-lg container-fluid">
           <div class="row look-book-flex">
+            <h1>S-425 DENIM CARGOS</h1>
             <div class="col col-lg-6 product" data-scroll>
-              <h1>S-425 DENIM CARGOS</h1>
-
               <div class="pr-details">
                 <h3 class="col-md-4 col">POCKETS:</h3>
                 <ul class="col-md-7 col">
                   <li class="cuz-tf-end">
                     2 OVERSIZED PATCH POCKET W ROUND OPENING EXTENDED TILL BACK
                   </li>
-                  <li>-CARGO POCKET W ORANGE STRIPE DETAIL</li>
+                  <li>CARGO POCKET W ORANGE STRIPE DETAIL</li>
                 </ul>
               </div>
               <div class="pr-details">
                 <h3 class="col-md-4 col">LOGO:</h3>
                 <ul class="col-md-7 col">
-                  <li>-PATCH LOGO ON THE EXTENDED POCKET</li>
+                  <li>PATCH LOGO ON THE EXTENDED POCKET</li>
                 </ul>
               </div>
               <div class="pr-details">
                 <h3 class="col-md-4 col">FIT:</h3>
                 <ul class="col-md-7 col">
-                  <li>- STRAIGHT BAGGY</li>
+                  <li>STRAIGHT BAGGY</li>
                 </ul>
               </div>
               <div class="pr-details">
                 <h3 class="col-md-4 col">COLOUR:</h3>
                 <ul class="col-md-7 col">
-                  <li>-BLUE</li>
+                  <li>BLUE</li>
                 </ul>
               </div>
               <div class="pr-details">
                 <h3 class="col-md-4 col">FABRIC:</h3>
                 <ul class="col-md-7 col">
-                  <li>-DENIM</li>
+                  <li>DENIM</li>
                 </ul>
               </div>
             </div>
@@ -250,38 +268,37 @@
       <section class="cuz-mt" data-scroll-section>
         <div class="container-lg container-fluid">
           <div class="row look-book-flex">
+            <h1>S-426 DENIM</h1>
             <div class="col col-lg-6 product" data-scroll>
-              <h1>S-426 DENIM</h1>
-
               <div class="pr-details">
                 <h3 class="col-md-4 col">POCKETS:</h3>
                 <ul class="col-md-7 col">
                   <li>2 OVERSIZED ROUND POCKETS IN FRONT</li>
-                  <li>-2 OVERSIZED CURVED POCKETS IN BACK</li>
+                  <li>2 OVERSIZED CURVED POCKETS IN BACK</li>
                 </ul>
               </div>
               <div class="pr-details">
                 <h3 class="col-md-4 col">LOGO:</h3>
                 <ul class="col-md-7 col">
-                  <li>-PATCH LOGO ON THE BACK POCKET</li>
+                  <li>PATCH LOGO ON THE BACK POCKET</li>
                 </ul>
               </div>
               <div class="pr-details">
                 <h3 class="col-md-4 col">FIT:</h3>
                 <ul class="col-md-7 col">
-                  <li>- STRAIGHT FIT WITH DARTS</li>
+                  <li>STRAIGHT FIT WITH DARTS</li>
                 </ul>
               </div>
               <div class="pr-details">
                 <h3 class="col-md-4 col">COLOUR:</h3>
                 <ul class="col-md-7 col">
-                  <li>-BLACK</li>
+                  <li>BLACK</li>
                 </ul>
               </div>
               <div class="pr-details">
                 <h3 class="col-md-4 col">FABRIC:</h3>
                 <ul class="col-md-7 col">
-                  <li>-DENIM</li>
+                  <li>DENIM</li>
                 </ul>
               </div>
             </div>
@@ -294,38 +311,37 @@
       <section class="cuz-mt" data-scroll-section>
         <div class="container-lg container-fluid">
           <div class="row look-book-flex">
+            <h1>S-454 TROUSERS</h1>
             <div class="col col-lg-6 product" data-scroll>
-              <h1>S-454 TROUSERS</h1>
-
               <div class="pr-details">
                 <h3 class="col-md-4 col">POCKETS:</h3>
                 <ul class="col-md-7 col">
                   <li>2 PATCH POCKET ON BACK</li>
-                  <li>-2 INSEAM/SIDE SLANT POCKET IN THE FRONT</li>
+                  <li>2 INSEAM/SIDE SLANT POCKET IN THE FRONT</li>
                 </ul>
               </div>
               <div class="pr-details">
                 <h3 class="col-md-4 col">LOGO:</h3>
                 <ul class="col-md-7 col">
-                  <li>-PATCH LOGO ON THE BACK POCKET</li>
+                  <li>PATCH LOGO ON THE BACK POCKET</li>
                 </ul>
               </div>
               <div class="pr-details">
                 <h3 class="col-md-4 col">FIT:</h3>
                 <ul class="col-md-7 col">
-                  <li>- STRAIGHT BAGGY</li>
+                  <li>STRAIGHT BAGGY</li>
                 </ul>
               </div>
               <div class="pr-details">
                 <h3 class="col-md-4 col">COLOUR:</h3>
                 <ul class="col-md-7 col">
-                  <li>-BLACK</li>
+                  <li>BLACK</li>
                 </ul>
               </div>
               <div class="pr-details">
                 <h3 class="col-md-4 col">FABRIC:</h3>
                 <ul class="col-md-7 col">
-                  <li>-CORDUROY</li>
+                  <li>CORDUROY</li>
                 </ul>
               </div>
             </div>
@@ -338,40 +354,39 @@
       <section class="cuz-mt" data-scroll-section>
         <div class="container-lg container-fluid">
           <div class="row look-book-flex">
+            <h1>S-455 SHORTS</h1>
             <div class="col col-lg-6 product" data-scroll>
-              <h1>S-455 SHORTS</h1>
-
               <div class="pr-details">
                 <h3 class="col-md-4 col">POCKETS:</h3>
                 <ul class="col-md-7 col">
                   <li>ROUND POCKET FRONT,</li>
-                  <li>-CURVED POCKET BACK</li>
-                  <li>-CARGO POCKET</li>
-                  <li>-PATCH POCKET WITH BUCKLE DETAIL</li>
+                  <li>CURVED POCKET BACK</li>
+                  <li>CARGO POCKET</li>
+                  <li>PATCH POCKET WITH BUCKLE DETAIL</li>
                 </ul>
               </div>
               <div class="pr-details">
                 <h3 class="col-md-4 col">LOGO:</h3>
                 <ul class="col-md-7 col">
-                  <li>-PATCH LOGO ON THE BACK POCKET</li>
+                  <li>PATCH LOGO ON THE BACK POCKET</li>
                 </ul>
               </div>
               <div class="pr-details">
                 <h3 class="col-md-4 col">FIT:</h3>
                 <ul class="col-md-7 col">
-                  <li>- BOXY</li>
+                  <li>BOXY</li>
                 </ul>
               </div>
               <div class="pr-details">
                 <h3 class="col-md-4 col">COLOUR:</h3>
                 <ul class="col-md-7 col">
-                  <li>-OFF WHITE</li>
+                  <li>OFF WHITE</li>
                 </ul>
               </div>
               <div class="pr-details">
                 <h3 class="col-md-4 col">FABRIC:</h3>
                 <ul class="col-md-7 col">
-                  <li>-DENIM</li>
+                  <li>DENIM</li>
                 </ul>
               </div>
             </div>
@@ -385,9 +400,8 @@
       <section class="cuz-mt" data-scroll-section>
         <div class="container-lg container-fluid">
           <div class="row look-book-flex">
+            <h1>OVERSIZED BAND COLLAR SHIRT WITH ZIPPER</h1>
             <div class="col col-lg-6 product" data-scroll>
-              <h1>OVERSIZED BAND COLLAR SHIRT WITH ZIPPER</h1>
-
               <div class="pr-details">
                 <h3 class="col-md-4 col">POCKETS:</h3>
                 <ul class="col-md-7 col">
@@ -397,25 +411,25 @@
               <div class="pr-details">
                 <h3 class="col-md-4 col">LOGO:</h3>
                 <ul class="col-md-7 col">
-                  <li>-PATCH LOGO ON THE LEFT CHEST SIDE</li>
+                  <li>PATCH LOGO ON THE LEFT CHEST SIDE</li>
                 </ul>
               </div>
               <div class="pr-details">
                 <h3 class="col-md-4 col">FIT:</h3>
                 <ul class="col-md-7 col">
-                  <li>- BAGGY</li>
+                  <li>BAGGY</li>
                 </ul>
               </div>
               <div class="pr-details">
                 <h3 class="col-md-4 col">COLOUR:</h3>
                 <ul class="col-md-7 col">
-                  <li>- SERENITY BLUE</li>
+                  <li>SERENITY BLUE</li>
                 </ul>
               </div>
               <div class="pr-details">
                 <h3 class="col-md-4 col">FABRIC:</h3>
                 <ul class="col-md-7 col">
-                  <li>- COTTON</li>
+                  <li>COTTON</li>
                 </ul>
               </div>
             </div>
@@ -429,37 +443,36 @@
       <section class="cuz-mt" data-scroll-section>
         <div class="container-lg container-fluid">
           <div class="row look-book-flex">
+            <h1>FULL ZIPPER FLANNEL SHACKET</h1>
             <div class="col col-lg-6 product" data-scroll>
-              <h1>FULL ZIPPER FLANNEL SHACKET</h1>
-
               <div class="pr-details">
                 <h3 class="col-md-4 col">POCKETS:</h3>
                 <ul class="col-md-7 col">
-                  <li>-2 KANGAROO POCKETS</li>
+                  <li>2 KANGAROO POCKETS</li>
                 </ul>
               </div>
               <div class="pr-details">
                 <h3 class="col-md-4 col">DETAILS:</h3>
                 <ul class="col-md-7 col">
-                  <li>-ADJUSTABLE ELASTIC CORD ON SLEEVES</li>
+                  <li>ADJUSTABLE ELASTIC CORD ON SLEEVES</li>
                 </ul>
               </div>
               <div class="pr-details">
                 <h3 class="col-md-4 col">FIT:</h3>
                 <ul class="col-md-7 col">
-                  <li>- BAGGY</li>
+                  <li>BAGGY</li>
                 </ul>
               </div>
               <div class="pr-details">
                 <h3 class="col-md-4 col">COLOUR:</h3>
                 <ul class="col-md-7 col">
-                  <li>-PLAID</li>
+                  <li>PLAID</li>
                 </ul>
               </div>
               <div class="pr-details">
                 <h3 class="col-md-4 col">FABRIC:</h3>
                 <ul class="col-md-7 col">
-                  <li>- FLANNEL</li>
+                  <li>FLANNEL</li>
                 </ul>
               </div>
             </div>
@@ -473,38 +486,37 @@
       <section class="cuz-mt" data-scroll-section>
         <div class="container-lg container-fluid">
           <div class="row look-book-flex">
+            <h1>OVERSIZED STRIPED SHIRT</h1>
             <div class="col col-lg-6 product" data-scroll>
-              <h1>OVERSIZED STRIPED SHIRT</h1>
-
               <div class="pr-details">
                 <h3 class="col-md-4 col">POCKETS:</h3>
                 <ul class="col-md-7 col">
-                  <li>-2 PATCH POCKETS</li>
+                  <li>2 PATCH POCKETS</li>
                 </ul>
               </div>
               <div class="pr-details">
                 <h3 class="col-md-4 col">DETAILS:</h3>
                 <ul class="col-md-7 col">
-                  <li>- DEEP ROUNDED HEMT</li>
-                  <li>-2 FLAT PLEATS UNDERNEATH THE YORK</li>
+                  <li>DEEP ROUNDED HEMT</li>
+                  <li>2 FLAT PLEATS UNDERNEATH THE YORK</li>
                 </ul>
               </div>
               <div class="pr-details">
                 <h3 class="col-md-4 col">FIT:</h3>
                 <ul class="col-md-7 col">
-                  <li>- BAGGY</li>
+                  <li>BAGGY</li>
                 </ul>
               </div>
               <div class="pr-details">
                 <h3 class="col-md-4 col">COLOUR:</h3>
                 <ul class="col-md-7 col">
-                  <li>-BLUE</li>
+                  <li>BLUE</li>
                 </ul>
               </div>
               <div class="pr-details">
                 <h3 class="col-md-4 col">FABRIC:</h3>
                 <ul class="col-md-7 col">
-                  <li>- 100% COTTON</li>
+                  <li>100% COTTON</li>
                 </ul>
               </div>
             </div>
@@ -517,38 +529,37 @@
       <section class="cuz-mt" data-scroll-section>
         <div class="container-lg container-fluid">
           <div class="row look-book-flex">
+            <h1>OVERSIZED FULL SLEEVE SHIRT</h1>
             <div class="col col-lg-6 product" data-scroll>
-              <h1>OVERSIZED FULL SLEEVE SHIRT</h1>
-
               <div class="pr-details">
                 <h3 class="col-md-4 col">POCKETS:</h3>
                 <ul class="col-md-7 col">
-                  <li>-CARGO POCKET AND FLAT FELL SEAM POCKET</li>
+                  <li>CARGO POCKET AND FLAT FELL SEAM POCKET</li>
                 </ul>
               </div>
               <div class="pr-details">
                 <h3 class="col-md-4 col">DETAILS:</h3>
                 <ul class="col-md-7 col">
-                  <li>- ORANGE STRIP DETAIL</li>
-                  <li>-LOOP UNDERNEATH THE YORK</li>
+                  <li>ORANGE STRIP DETAIL</li>
+                  <li>LOOP UNDERNEATH THE YORK</li>
                 </ul>
               </div>
               <div class="pr-details">
                 <h3 class="col-md-4 col">FIT:</h3>
                 <ul class="col-md-7 col">
-                  <li>- BAGGY</li>
+                  <li>BAGGY</li>
                 </ul>
               </div>
               <div class="pr-details">
                 <h3 class="col-md-4 col">COLOUR:</h3>
                 <ul class="col-md-7 col">
-                  <li>- FADED BLACK</li>
+                  <li>FADED BLACK</li>
                 </ul>
               </div>
               <div class="pr-details">
                 <h3 class="col-md-4 col">FABRIC:</h3>
                 <ul class="col-md-7 col">
-                  <li>- COTTON</li>
+                  <li>COTTON</li>
                 </ul>
               </div>
             </div>
@@ -562,39 +573,38 @@
       <section class="cuz-mt" data-scroll-section>
         <div class="container-lg container-fluid">
           <div class="row look-book-flex">
+            <h1>OVERSIZED ZIPPER POCKET SHIRT</h1>
             <div class="col col-lg-6 product" data-scroll>
-              <h1>OVERSIZED ZIPPER POCKET SHIRT</h1>
-
               <div class="pr-details">
                 <h3 class="col-md-4 col">POCKETS:</h3>
                 <ul class="col-md-7 col">
-                  <li>-CARGO POCKET</li>
-                  <li>-2 PATCH POCKETS</li>
-                  <li>-1 ZIPPER POCKET</li>
+                  <li>CARGO POCKET</li>
+                  <li>2 PATCH POCKETS</li>
+                  <li>1 ZIPPER POCKET</li>
                 </ul>
               </div>
               <div class="pr-details">
                 <h3 class="col-md-4 col">DETAILS:</h3>
                 <ul class="col-md-7 col">
-                  <li>- DOUBLE STITCHING DETAILS ON ALL POCKETS</li>
+                  <li>DOUBLE STITCHING DETAILS ON ALL POCKETS</li>
                 </ul>
               </div>
               <div class="pr-details">
                 <h3 class="col-md-4 col">FIT:</h3>
                 <ul class="col-md-7 col">
-                  <li>- BAGGY</li>
+                  <li>BAGGY</li>
                 </ul>
               </div>
               <div class="pr-details">
                 <h3 class="col-md-4 col">COLOUR:</h3>
                 <ul class="col-md-7 col">
-                  <li>- BEIGE</li>
+                  <li>BEIGE</li>
                 </ul>
               </div>
               <div class="pr-details">
                 <h3 class="col-md-4 col">FABRIC:</h3>
                 <ul class="col-md-7 col">
-                  <li>- COTTON</li>
+                  <li>COTTON</li>
                 </ul>
               </div>
             </div>
@@ -608,76 +618,98 @@
       <section class="cuz-mt" data-scroll-section>
         <div class="container-lg container-fluid">
           <div class="row look-book-flex">
+            <h1>OVERSIZED ZIPPER POCKET SHIRT</h1>
             <div class="col col-lg-6 product" data-scroll>
-              <h1>OVERSIZED ZIPPER POCKET SHIRT</h1>
-
               <div class="pr-details">
                 <h3 class="col-md-4 col">POCKETS:</h3>
                 <ul class="col-md-7 col">
-                  <li>-CARGO POCKET</li>
-                  <li>-2 PATCH POCKETS</li>
-                  <li>-1 ZIPPER POCKET</li>
+                  <li>CARGO POCKET</li>
+                  <li>2 PATCH POCKETS</li>
+                  <li>1 ZIPPER POCKET</li>
                 </ul>
               </div>
               <div class="pr-details">
                 <h3 class="col-md-4 col">DETAILS:</h3>
                 <ul class="col-md-7 col">
-                  <li>- DOUBLE STITCHING DETAILS ON ALL POCKETS</li>
+                  <li>DOUBLE STITCHING DETAILS ON ALL POCKETS</li>
                 </ul>
               </div>
               <div class="pr-details">
                 <h3 class="col-md-4 col">FIT:</h3>
                 <ul class="col-md-7 col">
-                  <li>- BAGGY</li>
+                  <li>BAGGY</li>
                 </ul>
               </div>
               <div class="pr-details">
                 <h3 class="col-md-4 col">COLOUR:</h3>
                 <ul class="col-md-7 col">
-                  <li>- BEIGE</li>
+                  <li>BEIGE</li>
                 </ul>
               </div>
               <div class="pr-details">
                 <h3 class="col-md-4 col">FABRIC:</h3>
                 <ul class="col-md-7 col">
-                  <li>- COTTON</li>
+                  <li>COTTON</li>
                 </ul>
               </div>
             </div>
             <div class="col col-lg-6 cuz-h-img">
               <img src="./assets/Look-book/fullsleeve.jpg" alt="" />
             </div>
+          </div>
+        </div>
+      </section>
+      <section class="cuz-mt" data-scroll-section>
+        <div class="container-lg container-fluid">
+          <div class="row look-book-flex ty-flex">
+            <div class="col ty-col-I">UNITING SCATTERED SKATEBOARDERS</div>
+            <div class="col ty-col-II">THANK YOU</div>
           </div>
         </div>
       </section>
       <footer data-scroll-section>
-        <div class="container-fluid container-lg" data-scroll>
+        <div class="container-fluid" data-scroll>
           <div class="row">
             <div class="ft-cont">
-              <div class="ft-logo col col-lg-5">
+              <div class="ft-logo col col-md-3">
                 <img src="./logo.png" alt="" />
               </div>
-              <div class="col col-lg-6 cuz-ft-flex">
-                <ul class="col-md-7 col">
-                  <h3 class="col-md-4 col">Help & Assistant</h3>
+              <div class="col col-md-6 cuz-ft-flex">
+                <ul>
+                  <h3>Help & Assistant</h3>
                   <li><a href="#">Home</a></li>
                   <li><a href="#">Collection</a></li>
                   <li><a href="#">Contact</a></li>
+                  <li><a href="#">Terms & Condition</a></li>
                 </ul>
                 <ul>
-                  <h3 class="col-md-4 col">Follow Us</h3>
-                  <li><a href="#">Instagram</a></li>
-                  <li><a href="#">Twitter</a></li>
-                  <li><a href="#">SkatrdMedia</a></li>
+                  <h3>Follow Us</h3>
+                  <div class="social-flex">
+                    <li>
+                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                  </div>
                 </ul>
               </div>
             </div>
             <!-- <div class="col-6"></div> -->
             <!-- <div class="ft-bottom">
-                <p class="text-center">
-                  ©2023 made with Love by <a href="#">SKATRD.</a>
-                </p>
-              </div> -->
+              <p class="text-center">
+                ©2023 made with Love by <a href="#">SKATRD.</a>
+              </p>
+            </div> -->
           </div>
         </div>
       </footer>
