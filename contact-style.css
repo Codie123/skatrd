@@ -127,7 +127,9 @@
   .extra-title {
     font-weight: 800;
     font-size: 38px;
-    line-height: 1.4; }
+    line-height: 1.4; 
+    font-family: var(--east-bold-II);
+  }
   
   .extra-text {
     font-size: 20px;
@@ -3555,6 +3557,7 @@
   .cuz-title a{
     text-decoration: none;
     color: black;
+    font-family: var(--east-bold-II);
   }
   .cuz-title a:hover{
     color: #333;

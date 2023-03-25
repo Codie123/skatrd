@@ -1,14 +1,15 @@
 (function () {
-  emailjs.init("FmTw3vk_Mi14SA1sA");
+  emailjs.init("pgcuOi7rw3yaEw5Wn");
   console.log("hello friend");
 })();
 
 const button = document.querySelector(".submit");
 
-const SERVICEID = "service_iqftjeu";
-const TEMPLATEID = "template_yyouukd";
+const SERVICEID = "service_s3rl5yt";
+const TEMPLATEID = "template_gfxj3mi";
 
 button.addEventListener("click", (e) => {
+  e.preventDefault();
   const params = {
     name: document.getElementById("name").value,
     email: document.getElementById("email").value,
