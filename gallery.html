@@ -1,0 +1,295 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./contact-style.css" />
+
+    <!-- <link rel="stylesheet" href="toast.css" /> -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- css plugin -->
+    <link rel="stylesheet" href="./css/plugins.css" />
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+
+    <!-- ends -->
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ends -->
+    <!-- emailjs  -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script src="./mail.js" defer></script>
+    <!-- ends -->
+    <!-- locomotive -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css"
+    />
+    <!-- <link rel="icon" type="image/png"  href="favicon.ico"> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"
+      defer
+    ></script>
+    <!-- ends -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="./script.js" defer></script>
+    <title>Gallery</title>
+  </head>
+  <body class="">
+    <main class="cuz-main w">
+      <header class="header">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <a
+              class="navbar-brand cuz-dark-logo col-2 col-md-3"
+              href="index.html"
+            >
+              <img src="./logo.png" alt="" />
+            </a>
+            <button
+              class="navbar-toggler cuz-nav-toggle collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              style="
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                gap: 5px;
+              "
+            >
+              <span class=""></span>
+              <span class=""></span>
+              <span class=""></span>
+            </button>
+            <div class="collapse navbar-collapse cuz-jf-end" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="product-list.html">Collection</a>
+                </li>
+                <li class="nav-item">
+                  <a href="look-book.html" class="nav-link">Look Book</a>
+                </li>
+                <li class="nav-item">
+                  <a href="film.html" class="nav-link">Film</a>
+                </li>
+                <li class="nav-item">
+                  <a href="gallery.html" class="nav-link active">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <section class="cuz-page-header page-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 col-md-9">
+              <div class="cont">
+                <h4>
+                  Do you want to work <span class="stroke">together</span>, or
+                  talk about an <span class="stroke">idea?</span> Let's do this.
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="img-wrapper">
+          <div class="title">
+            <div class="container">
+              <h3>Gallery</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+     
+      <section class="" data-scroll-section>
+        <div class="container cuz-container cuz-gallery-wrapper">
+         <div class="row">
+          <div class="categories">
+            <h2>Categories</h2>
+            <ul>
+              <li class="item add" id="all">All</li>
+              <!-- <li class=" id="carved" >CARVED</li> -->
+              <li class="item" id="gallery">GALLERY</li>
+              <li class="item" id="look">LOOK BOOK </li>
+              
+              <li class="item" id="studio">STUDIO </li>
+
+
+
+            </ul>
+          </div>
+         </div>
+        <div class="row cuz-js-gap">
+          <div class="col col-sm-5 col-lg-6 card cuz-card gallery ">
+            <img src="./assets/gallery/aryavinc2.jpg" alt="">
+          </div>
+          <div class="col col-sm-5 col-lg-6 card cuz-card gallery">
+            <img src="./assets/gallery/arya vinc.jpg" alt="">
+
+          </div>
+          <div class="col col-sm-5 col-lg-6 card cuz-card gallery"> 
+            <img src="./assets/skate/3.jpg" alt="">
+
+          </div>
+          <div class="col col-sm-5 col-lg-6 card cuz-card gallery"> 
+            <img src="./assets/skate/4.jpg" alt="">
+
+          </div>
+
+
+          <!-- look book -->
+          <div class="col col-sm-5 col-lg-6 card cuz-card look ">
+            <img src="./assets/gallery/5 people.png" alt="">
+          </div>
+          <div class="col col-sm-5 col-lg-6 card cuz-card look">
+            <img src="./assets/Look-book/band.JPG" alt="">
+
+          </div>
+          <div class="col col-sm-5 col-lg-6 card cuz-card look"> 
+            <img src="./assets/Look-book/band.JPG" alt="">
+
+          </div>
+          <div class="col col-sm-5 col-lg-6 card cuz-card look"> 
+            <img src="./assets/Look-book/band.JPG" alt="">
+
+          </div>
+
+
+          <!-- studio -->
+          <div class="col col-sm-5 col-lg-6 card cuz-card studio ">
+            <img src="./assets/skate/1.jpg" alt="">
+          </div>
+          <div class="col col-sm-5 col-lg-6 card cuz-card studio">
+            <img src="./assets/skate/2.jpg" alt="">
+
+          </div>
+          <div class="col col-sm-5 col-lg-6 card cuz-card studio"> 
+            <img src="./assets/skate/3.jpg" alt="">
+
+          </div>
+          <div class="col col-sm-5 col-lg-6 card cuz-card studio"> 
+            <img src="./assets/skate/4.jpg" alt="">
+
+          </div>
+
+        </div>
+        
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ==================== Start works ==================== -->
+
+   
+
+    <!-- ==================== End works ==================== -->
+
+    <!-- ==================== Start call-to-action ==================== -->
+
+    <!-- ==================== End call-to-action ==================== -->
+    <footer data-scroll-section>
+      <div class="container-fluid" data-scroll>
+        <div class="row">
+          <div class="ft-cont">
+            <div class="ft-logo col col-md-3">
+              <img src="./logo.png" alt="" />
+            </div>
+            <div class="col col-md-6 cuz-ft-flex">
+              <ul>
+                <h3>Help & Assistant</h3>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./product-list.html">Collection</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="#">Terms & Condition</a></li>
+              </ul>
+              <ul>
+                <h3>Follow Us</h3>
+                <div class="social-flex">
+                  <li>
+                    <a
+                      href="https://www.instagram.com/projectskatrd/?igshid=YmMyMTA2M2Y%3D"
+                      target="_blank"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.youtube.com/@projectskatrd."
+                      target="_blank"
+                      ><i class="fa-brands fa-youtube"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://twitter.com/projectskatrd?s=11&t=Ln_ay2NQuCfwEqd7LGVC5g"
+                      target="_blank"
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://in.pinterest.com/projectskatrd/?invite_code=dcc73bd3c870448f8bb9eb9dbe65ed62&sender=598345637901185804"
+                      ><i class="fa-brands fa-pinterest"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/mwlite/profile/in/project-skatrd-0ab235261"
+                      target="_blank"
+                      ><i class="fa-brands fa-linkedin"></i
+                    ></a>
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </div>
+          <!-- <div class="col-6"></div> -->
+          <!-- <div class="ft-bottom">
+            <p class="text-center">
+              ©2023 made with Love by <a href="#">SKATRD.</a>
+            </p>
+          </div> -->
+        </div>
+      </div>
+    </footer>
+
+    <!-- <script src="./js/jquery-3.0.0.min.js"></script>
+    <script src="./js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="./js/plugins.js"></script>
+    <script src="./js/scripts.js"></script> -->
+    <script src="./gallery_sort.js"></script>
+  </body>
+</html>

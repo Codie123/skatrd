@@ -24,8 +24,18 @@ items.forEach((x) => {
 function resetActive() {}
 function showActive(newmenubtn) {
   activeBtn = newmenubtn;
+  // if(activeBtn === "gallery"){
+  //   card.classList.contains('gallery').style.display="flex";
+  //   if()
+  // }
   card.forEach((card) => {
     if (card.classList.contains(activeBtn)) {
+      card.style.display = "flex";
+    } else if (activeBtn == "gallery") {
+      card.style.display = "flex";
+    } else if (activeBtn == "look") {
+      card.style.display = "flex";
+    } else if (activeBtn == "studio") {
       card.style.display = "flex";
     } else if (activeBtn == "all") {
       card.style.display = "flex";
