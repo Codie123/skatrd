@@ -1137,7 +1137,7 @@
     transition-delay: .8s; }
   
   .page-header {
-    background:var(--bg-primary);
+    /* background:var(--bg-primary); */
     color: var(--primary-text); }
     .page-header .cont {
       padding: 150px 0 0px; }
@@ -3545,7 +3545,7 @@ footer{
 
   /* film styles  */
   .cuz-title{
-    padding: 0 0 3rem 0;
+    padding: 0 0 0rem 0;
     justify-content: flex-start;
   }
   .cuz-title a{
@@ -3579,7 +3579,8 @@ footer{
   .cuz-flex{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    gap: 3rem;
     justify-content: space-around;
   }
   /* ends */

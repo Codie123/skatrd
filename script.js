@@ -1,6 +1,6 @@
-const nav = document.querySelector(".header");
-const body = document.body;
-const main = document.querySelector("main");
+// const nav = document.querySelector(".header");
+// const body = document.body;
+// const main = document.querySelector("main");
 
 const sizes = document.querySelectorAll(".size");
 const productSize = document.querySelector("#prSize");

@@ -8,11 +8,17 @@
     <link rel="stylesheet" href="pre-loader.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="contact-style.css" />
-    <!-- locomotive -->
+
+    <!-- faviicon -->
+
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css"
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png"
     />
+    <!-- ends -->
+
     <!-- fontawesome -->
     <link
       rel="stylesheet"
@@ -22,11 +28,7 @@
       referrerpolicy="no-referrer"
     />
     <!-- ends -->
-    <!-- <link rel="icon" type="image/png"  href="favicon.ico"> -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"
-      defer
-    ></script>
+
     <!-- ends -->
     <link
       rel="stylesheet"
@@ -38,22 +40,33 @@
       crossorigin="anonymous"
       defer
     ></script>
+
     <script src="./script.js" defer></script>
+    <script
+      src="./pre-loader.js
+    "
+      defer
+    ></script>
+
     <title>Products</title>
   </head>
   <body>
+    <div class="preloader">
+      <video src="../assets/preloader.webm" class="view" muted></video>
+    </div>
+
     <main class="cuz-main w" data-scroll-container>
       <header class="header">
         <nav class="navbar navbar-expand-lg">
           <div class="container">
             <a
-              class="navbar-brand cuz-dark-logo col-2 col-md-3"
+              class="gal-logo navbar-brand cuz-dark-logo col-2 col-md-3"
               href="index.html"
             >
               <img src="./logo.png" alt="" />
             </a>
             <button
-              class="navbar-toggler cuz-nav-toggle collapsed"
+              class="gal-menu navbar-toggler cuz-nav-toggle collapsed"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNav"
@@ -73,7 +86,7 @@
               <span class=""></span>
             </button>
             <div class="collapse navbar-collapse cuz-jf-end" id="navbarNav">
-              <ul class="navbar-nav">
+              <ul class="navbar-nav gal-nav">
                 <li class="nav-item">
                   <a class="nav-link" aria-current="page" href="index.html"
                     >Home</a
@@ -98,20 +111,16 @@
         </nav>
       </header>
 
-      <section class="page-header">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-7 col-md-9">
-              <div class="cont">
-                <h1 class="extra-title mb-10">Films</h1>
-                <p>
-                  All the most current news and events of our creative team.
-                </p>
-              </div>
+      <section class="gal-page-header film-banner cuz-page-header page-header">
+        <div class="img-wrapper gal-img-wrapper">
+          <div class="title cuz-p-none">
+            <div class="container">
+              <h3>Films</h3>
             </div>
           </div>
         </div>
       </section>
+
       <section class="blog-pg section-padding">
         <div class="container">
           <div class="row justify-content-center">
@@ -141,11 +150,7 @@
                         >CARVED</a
                       >
                     </h4>
-                    <p>
-                      We at SKATRD, are very excited to announce that we are
-                      launching our first CAPSULE COLLECTION named as CARVED
-                      002.
-                    </p>
+                    <p>ART FILM- CARVED. SEPTEMBER 2022</p>
                   </div>
                 </div>
                 <div class="item mb-80 cuz-film-flex">
@@ -167,11 +172,7 @@
                         >SKATE CHANGE LIFE.</a
                       >
                     </h4>
-                    <p>
-                      Through this we are here to introduce our skating
-                      community, we are not just a fashion brand, we have a
-                      skateboarding community too.
-                    </p>
+                    <p>ART FILM- SKATE CHANGE LIFE.  FEBURARY 2023</p>
                   </div>
                 </div>
               </div>
@@ -179,6 +180,7 @@
           </div>
         </div>
       </section>
+
       <footer data-scroll-section>
         <div class="container-fluid" data-scroll>
           <div class="row">
@@ -254,19 +256,5 @@
         </div>
       </footer>
     </main>
-
-    <!-- <script>
-      document.addEventListener("DOMContentLoaded", function (event) {
-        const scroll = new LocomotiveScroll({
-          el: document.querySelector("[data-scroll-container]"),
-          smooth: true,
-          // lerp: 0.1,
-          inertia: 0.9,
-        });
-      });
-    </script> -->
-    <script src="./pre-loader.js
-    "></script>
-    <script src="./script.js"></script>
   </body>
 </html>

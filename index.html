@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <!-- faviicon -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png"
+    />
+    <!-- ends -->
     <!-- fontawesome -->
     <link
       rel="stylesheet"
@@ -14,16 +23,10 @@
       referrerpolicy="no-referrer"
     />
     <!-- ends -->
-    <!-- locomotive -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"
-      defer
-    ></script>
+    <!-- preloader custome css -->
+    <link rel="stylesheet" href="pre-loader.css" />
     <!-- ends -->
+
     <!-- swiper -->
     <link
       rel="stylesheet"
@@ -44,6 +47,11 @@
     <title>Home</title>
   </head>
   <body>
+    <!-- preloader -->
+    <div class="preloader">
+      <video src="../assets/preloader.webm" class="view" muted></video>
+    </div>
+    <!-- ends -->
     <header class="header">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
@@ -206,6 +214,7 @@
             <img src="./assets/unit.jpg" alt="" />
           </div>
         </section>
+
         <footer data-scroll-section>
           <div class="container-fluid" data-scroll>
             <div class="row">
@@ -257,6 +266,7 @@
                       <li>
                         <a
                           href="https://in.pinterest.com/projectskatrd/?invite_code=dcc73bd3c870448f8bb9eb9dbe65ed62&sender=598345637901185804"
+                          target="_blank"
                           ><i class="fa-brands fa-pinterest"></i
                         ></a>
                       </li>
@@ -271,55 +281,11 @@
                   </ul>
                 </div>
               </div>
-              <!-- <div class="col-6"></div> -->
-              <!-- <div class="ft-bottom">
-                <p class="text-center">
-                  ©2023 made with Love by <a href="#">SKATRD.</a>
-                </p>
-              </div> -->
             </div>
           </div>
         </footer>
       </div>
     </main>
-
-    <script>
-      document.addEventListener("onscroll", function (event) {
-        const scroll = new LocomotiveScroll({
-          el: document.querySelector("[data-scroll-container]"),
-          smooth: true,
-          // lerp: 0.1,
-          inertia: 0.9,
-        });
-      });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script>
-      const swiper = new Swiper(".swiper", {
-        // Optional parameters
-        direction: "horizontal",
-        loop: true,
-
-        // If we need pagination
-        //   pagination: {
-        //     el: ".swiper-pagination",
-        //   },
-        effect: "coverflow",
-        coverflowEffect: {
-          rotate: 30,
-          slideShadows: false,
-        },
-        // Navigation arrows
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-
-        // And if we need scrollbar
-        //   scrollbar: {
-        //     el: ".swiper-scrollbar",
-        //   },
-      });
-    </script>
+    <script src="./pre-loader.js"></script>
   </body>
 </html>
