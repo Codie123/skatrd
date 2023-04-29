@@ -39,7 +39,7 @@
   </head>
   <body>
     <div class="preloader">
-      <video src="../assets/preloader.webm" class="view" muted></video>
+      <img src="../logo.png" class="pulse" alt="" />
     </div>
     <main class="cuz-main w">
       <header class="header">
@@ -165,67 +165,25 @@
       </section>
       <section class="cuz-mt contact section-padding">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="form">
-                <div class="messages"></div>
-
-                <div class="controls">
-                  <div class="form-group">
-                    <input
-                      id="name"
-                      type="text"
-                      name="name"
-                      placeholder="Name"
-                      required="required"
-                    />
-                  </div>
-
-                  <div class="form-group">
-                    <input
-                      id="email"
-                      type="email"
-                      name="email"
-                      placeholder="Email"
-                      required="required"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <select name="categories" id="product">
-                      <option value="product10" selected>
-                        S-426 BLACK DENIM
-                      </option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      id="prSize"
-                      name="size"
-                      placeholder="Size"
-                      disabled
-                    />
-                  </div>
-                  <div class="form-group">
-                    <textarea
-                      id="message"
-                      name="message"
-                      placeholder="Message"
-                      rows="4"
-                      required="required"
-                    ></textarea>
-                  </div>
-                  <button type="submit" class="btn-curve btn-wit submit">
-                    <span>Send Message</span>
-                  </button>
-                </div>
-              </div>
+          <div class="row g-5">
+            <div class="col-lg-6 cuz-en-flex">
+              <a
+                class="btn-curve btn-wit"
+                href="https://api.whatsapp.com/send/?phone=75920 20811&amp;text.&amp;app_absent=0"
+                target="_blank"
+              >
+                <span>Connect in whatsapp</span>
+              </a>
             </div>
-            <div class="col-lg-5 offset-lg-1">
+            <div class="col-lg-5">
               <div class="cont-info">
                 <h2 class="extra-title wow" data-splitting="">Make Enquiry.</h2>
                 <div class="item mb-40">
-                  <!-- <h5><a href="#0">Email@example.com</a></h5> -->
+                  <h5>
+                    <a href="mailto:projectskatrd@gmail.com"
+                      >projectskatrd@gmail.com</a
+                    >
+                  </h5>
                   <h5>+91 75920 20811</h5>
                 </div>
               </div>
@@ -307,11 +265,25 @@
           </div>
         </div>
       </footer>
+      <div class="cuz-toast">
+        <div class="cuz-toast-content">
+          <i class="fas fa-solid fa-check check"></i>
+
+          <div class="message">
+            <span class="text text-1">Success</span>
+            <span class="text text-2">Your changes has been saved</span>
+          </div>
+        </div>
+        <i class="fa-solid fa-xmark close"></i>
+
+        <!-- Remove 'active' class, this is just to show in Codepen thumbnail -->
+        <div class="progress active"></div>
+      </div>
     </main>
     <script src="../pre-loader.js"></script>
 
     <!-- swiper js  -->
-    <script src="../product-enquiry.js"></script>
+    <!-- <script src="../product-enquiry.js"></script> -->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="../swiper.js"></script>

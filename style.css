@@ -34,7 +34,7 @@
         }
 :root{
     --background-blur:blur(10px !important);
-    --bg-primary:#fafafa;
+    --bg-primary:#ffffff;
     --primary-text:black;
     --secondary-text:rgb(9, 9, 9);
     --primary-font:"Avenir Roman";
@@ -691,7 +691,13 @@ footer{
     margin: 0 -25px;
   }
 /* ends */
+/* product enquiry section */
+.cuz-en-flex{
+    display: flex;
+    align-items: center;
+}
 
+/* ends */
 /* categories */
 .categories{
        /* position: fixed; */
@@ -752,7 +758,7 @@ border-radius: 25px;
 @media(max-width:541px){
     .categories{
         position: static;
-        transform: translate(15px, 94px);
+        transform: translate(0px, 94px);
         top: 14%;
         left: 5%;
         z-index: 99;
@@ -786,8 +792,8 @@ border-radius: 25px;
     .categories{
         top: 11%;
         left: 3%;
-        flex-direction: row;
-        gap: 0;
+        flex-direction: column;
+        gap: 1rem;
     }
     .categories ul{
         flex-direction: row;
@@ -801,7 +807,7 @@ border-radius: 25px;
     .categories{
         flex-direction: column;
         gap: 10px;
-        align-items: flex-start;
+        align-items: center;
         transform: translate(14px, 112px);
     }
     .cuz-dark-logo img{
@@ -1310,17 +1316,66 @@ align-items: center;
 .gal-grid-container .card{
     width: fit-content;
 }
+
+
 .gal-page-header{
-    background: linear-gradient(45deg, black, transparent) ,url("./assets/gallery/hero-banner c1.jpg");
+    background: linear-gradient(45deg, black, transparent) ,url("https://cdn.jsdelivr.net/gh/Codie123/cdn/uploads/gallery/IMG_6813.jpg");
     color: var(--primary-text);
     background-repeat: no-repeat;
     min-height: 47vh;
-    background-size: cover;
+    background-size: 100%;
+    background-position: 55% 94%;
 }
 .film-banner{
-    background: linear-gradient(45deg, black, transparent) ,url("./assets/gallery/studio/studio1.webp");
+    background: linear-gradient(45deg, black, transparent) ,url("https://cdn.jsdelivr.net/gh/Codie123/cdn/uploads/gallery/IMG_6812.jpg");
     background-position: 35% 27%;
+    background-repeat: no-repeat;
 }
+@media(max-width:1024px){
+    .gal-page-header{
+        background-size: 130%;
+        background-position: 99% 96%;
+    }
+    
+   
+}
+@media(max-width:769px){
+    .gal-page-header{
+        background-size: 152%;
+        background-position: 99% 100%;
+    }
+    .film-banner{
+        background-size: 203%;
+        background-position: 45% 5%;
+    }
+}
+@media(max-width:518px){
+    .gal-page-header{
+        background-size: 229%;
+        background-position: 67% 97%;
+    }
+    .film-banner{
+        background-position: 74% 3%;
+    background-size: 260%;
+    }
+}
+@media(max-width:425px){
+    .gal-page-header{
+        background-size: 270%;
+        background-position: 53% 100%;
+    }
+    .film-banner{
+        background-position: 84% 3%;
+        background-size: 366%;
+    }
+}
+@media(max-width:375px){
+    .gal-page-header{
+        background-size: 366%;
+        background-position: 60% 99%;
+    }
+}
+
 .page-header .img-wrapper .title {
     position: absolute;
     top: 0;
@@ -1401,4 +1456,78 @@ color: black;
 }
 
 /* ends */
+/* ends */
+
+/* cuz-toaster */
+.cuz-toast {
+    position: fixed;
+    z-index: 110;
+    top: 12%;
+    right: 30px;
+    border-radius: 12px;
+    background: #fff;
+    padding: 20px 35px 20px 25px;
+    box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transform: translateX(calc(100% + 30px));
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+  }
+  
+  .cuz-toast.active {
+    transform: translateX(0%);
+  }
+  
+  .cuz-toast .cuz-toast-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cuz-toast-content .check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    min-width: 35px;
+    background-color: #2770ff;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 50%;
+  }
+  
+  .cuz-toast-content .message {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+  }
+  
+  .message .text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #666666;
+  }
+  
+  .message .text.text-1 {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .cuz-toast .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding: 5px;
+    cursor: pointer;
+    opacity: 0.7;
+  }
+  
+  .cuz-toast .close:hover {
+    opacity: 1;
+  }
+  
+
+  
+
+
+  
+
 /* ends */

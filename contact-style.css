@@ -373,6 +373,7 @@
       background: #fff;
       border-color: #000000; }
       .btn-curve.btn-wit:after {
+        z-index: 1;
         background: #090909; }
       .btn-curve.btn-wit span {
         color: #1e1e1e; }

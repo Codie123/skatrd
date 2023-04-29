@@ -1,7 +1,3 @@
-// const nav = document.querySelector(".header");
-// const body = document.body;
-// const main = document.querySelector("main");
-
 const sizes = document.querySelectorAll(".size");
 const productSize = document.querySelector("#prSize");
 const items = document.querySelectorAll(".items");
@@ -66,7 +62,6 @@ const hamMenu = document.querySelector(".navbar-toggler");
 const navbar = document.querySelector(".navbar");
 window.addEventListener("scroll", () => {
   if (scrollY > 100) {
-    console.log("hello");
     head.classList.add("v-none");
   } else if (scrollY < 100) {
     head.classList.remove("v-none");
