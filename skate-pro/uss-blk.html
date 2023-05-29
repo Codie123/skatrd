@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="../contact-style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/contact-style.css" />
+    <link rel="stylesheet" href="../css/pre-loader.css" />
+
     <!-- fontawesome -->
     <link
       rel="stylesheet"
@@ -32,15 +34,21 @@
     />
     <!-- ends -->
     <!-- ends -->
-    <script src="../script.js" defer></script>
-    <title>S-235</title>
+    <script src="../js/script.js" defer></script>
+    <title>OVERSIZED BLACK T-SHIRT</title>
   </head>
   <body>
+    <div class="preloader">
+      <img src="../logo.png" class="pulse" alt="" />
+    </div>
     <main class="cuz-main w">
       <header class="header">
         <nav class="navbar navbar-expand-lg">
           <div class="container">
-            <a class="navbar-brand cuz-logo col-2 col-md" href="#">
+            <a
+              class="navbar-brand cuz-dark-logo col-2 col-md-3"
+              href="/index.html"
+            >
               <img src="../logo.png" alt="" style="filter: invert(0)" />
             </a>
             <button
@@ -75,11 +83,12 @@
                     >Collection</a
                   >
                 </li>
-                <li class="nav-item">
-                  <a href="../look-book.html" class="nav-link">Look Book</a>
-                </li>
+
                 <li class="nav-item">
                   <a href="../film.html" class="nav-link">Film</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../gallery.html" class="nav-link">Gallery</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="../contact.html">Contact</a>
@@ -92,50 +101,52 @@
       <section class="cuz-mt cuz-md-m">
         <div class="container">
           <div class="row cuz-md-flex">
-            <div class="col col-md-6 cuz-flex">
+            <div class="col-lg-6 cuz-flex">
               <div class="content-I">
-                <h1 class="pr-name">S-235</h1>
+                <h1 class="pr-name">OVERSIZED BLACK T-SHIRT</h1>
                 <div class="price">
-                  <span>₹0-/</span>
+                  <span>₹799 -/</span>
                 </div>
               </div>
               <div class="size-table">
                 <h3 class="size" data-size="s">S</h3>
                 <h3 class="size" data-size="m">M</h3>
                 <h3 class="size" data-size="l">L</h3>
-                <!-- <h3 class="size" data-size="xl">XL</h3> -->
-                <!-- <h3 class="size" data-size="xxl">XXL</h3> -->
+                <h3 class="size" data-size="xl">XL</h3>
+              </div>
+              <div>
+                <p class="chart">Size Chart->></p>
               </div>
               <p>
-                This series of trousers are the BASICS of SKATRD, they are
-                minimal, they are comfortable, they are best for every occasion.
-                This time we have bought them back in 4 new colours. They are
-                single pleated baggy trousers with 4 oversized pockets and
-                double stitch detailing. Its made with cotton so its suitable to
-                wear in all seasons.
+                Introducing our USS 04.01 Black Oversized T-shirt. It is made
+                with heavy cotton fabric and is trans-seasonal. It has a puff
+                logo print in the centre with USS plain print. It has a boxy
+                fit.
               </p>
-              <ul class="cuz-ul">
-                <li>
-                  COLOUR : Black, Coffee Brown, Desert Mirage, Bleached Sand
-                </li>
 
-                <li>POCKETS: 4 oversized</li>
-                <li>FABRIC: Cotton</li>
+              <ul class="cuz-ul">
+                <li>FABRIC: 98% COTTON, 2% LYCRA</li>
+                <li>EXTRA DETAILS:PUFF LOGO PRINT, PLAIN USS PRINT</li>
+                <li>FIT: OVERSIZED</li>
+                <li>COLOUR: BLACK</li>
               </ul>
             </div>
-            <div class="col col-md-6">
+            <div class="col-lg-6">
               <div class="swiper">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                   <!-- Slides -->
                   <div class="swiper-slide">
-                    <img src="../assets/images/pr-1.jpg" alt="" />
+                    <img src="../assets/uss.04.01/black.jpg" alt="" />
                   </div>
                   <div class="swiper-slide">
-                    <img src="../assets/images/pr-1.jpg" alt="" />
+                    <img src="../assets/uss.04.01/black.jpg" alt="" />
                   </div>
                   <div class="swiper-slide">
-                    <img src="../assets/images/pr-1.jpg" alt="" />
+                    <img src="../assets/uss.04.01/black.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../assets/uss.04.01/black.jpg" alt="" />
                   </div>
                   ...
                 </div>
@@ -155,66 +166,26 @@
       </section>
       <section class="cuz-mt contact section-padding">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="form">
-                <div class="messages"></div>
-
-                <div class="controls">
-                  <div class="form-group">
-                    <input
-                      id="name"
-                      type="text"
-                      name="name"
-                      placeholder="Name"
-                      required="required"
-                    />
-                  </div>
-
-                  <div class="form-group">
-                    <input
-                      id="email"
-                      type="email"
-                      name="email"
-                      placeholder="Email"
-                      required="required"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <select name="categories" id="product">
-                      <option value="product10" selected>S-235</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      id="prSize"
-                      name="size"
-                      placeholder="Size"
-                      disabled
-                    />
-                  </div>
-                  <div class="form-group">
-                    <textarea
-                      id="message"
-                      name="message"
-                      placeholder="Message"
-                      rows="4"
-                      required="required"
-                    ></textarea>
-                  </div>
-                  <button type="submit" class="btn-curve btn-wit submit">
-                    <span>Send Message</span>
-                  </button>
-                </div>
-              </div>
+          <div class="row g-5">
+            <div class="col-lg-6 cuz-en-flex">
+              <a
+                class="btn-curve btn-wit"
+                href="https://api.whatsapp.com/send/?phone=7592020811&amp;text.&amp;app_absent=0"
+                target="_blank"
+              >
+                <span>Connect in whatsapp</span>
+              </a>
             </div>
-            <div class="col-lg-5 offset-lg-1">
+            <div class="col-lg-5">
               <div class="cont-info">
                 <h2 class="extra-title wow" data-splitting="">Make Enquiry.</h2>
                 <div class="item mb-40">
-                  <!-- <h5><a href="#0">Email@example.com</a></h5> -->
-                  <h5>+4.930.705.5448</h5>
+                  <h5>
+                    <a href="mailto:projectskatrd@gmail.com"
+                      >projectskatrd@gmail.com</a
+                    >
+                  </h5>
+                  <h5>+91 75920 20811</h5>
                 </div>
               </div>
             </div>
@@ -225,16 +196,26 @@
         <div class="container-fluid" data-scroll>
           <div class="row">
             <div class="ft-cont">
-              <div class="ft-logo col col-md-3">
-                <img src="../logo.png" alt="" />
+              <div class="ft-logo-wrapper col-md-6 col">
+                <div class="ft-logo">
+                  <img src="../logo.png" alt="" />
+                </div>
+                <div class="ft-logo-extent">
+                  <h3>
+                    UNITING<br />
+                    SCATTERED SKATEBOARDERS
+                  </h3>
+                </div>
               </div>
+
               <div class="col col-md-6 cuz-ft-flex">
                 <ul>
                   <h3>Help & Assistant</h3>
                   <li><a href="../index.html">Home</a></li>
                   <li><a href="../product-list.html">Collection</a></li>
-                  <li><a href="../look-book.html">Look Book</a></li>
                   <li><a href="../film.html">Film</a></li>
+                  <li><a href="../gallery.html">Gallery</a></li>
+
                   <li><a href="../contact.html">Contact</a></li>
                   <li><a href="#">Terms & Condition</a></li>
                 </ul>
@@ -242,19 +223,38 @@
                   <h3>Follow Us</h3>
                   <div class="social-flex">
                     <li>
-                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                      <a
+                        href="https://www.instagram.com/projectskatrd/?igshid=YmMyMTA2M2Y%3D"
+                        target="_blank"
+                        ><i class="fa-brands fa-instagram"></i
+                      ></a>
                     </li>
                     <li>
-                      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                      <a
+                        href="https://www.youtube.com/@projectskatrd."
+                        target="_blank"
+                        ><i class="fa-brands fa-youtube"></i
+                      ></a>
                     </li>
                     <li>
-                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                      <a
+                        href="https://twitter.com/projectskatrd?s=11&t=Ln_ay2NQuCfwEqd7LGVC5g"
+                        target="_blank"
+                        ><i class="fa-brands fa-twitter"></i
+                      ></a>
                     </li>
                     <li>
-                      <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                      <a
+                        href="https://in.pinterest.com/projectskatrd/?invite_code=dcc73bd3c870448f8bb9eb9dbe65ed62&sender=598345637901185804"
+                        ><i class="fa-brands fa-pinterest"></i
+                      ></a>
                     </li>
                     <li>
-                      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                      <a
+                        href="https://www.linkedin.com/mwlite/profile/in/project-skatrd-0ab235261"
+                        target="_blank"
+                        ><i class="fa-brands fa-linkedin"></i
+                      ></a>
                     </li>
                   </div>
                 </ul>
@@ -269,30 +269,87 @@
           </div>
         </div>
       </footer>
+      <div class="cuz-toast">
+        <div class="cuz-toast-content">
+          <i class="fas fa-solid fa-check check"></i>
+
+          <div class="message">
+            <span class="text text-1">Success</span>
+            <span class="text text-2">Your changes has been saved</span>
+          </div>
+        </div>
+        <i class="fa-solid fa-xmark close"></i>
+
+        <!-- Remove 'active' class, this is just to show in Codepen thumbnail -->
+        <div class="progress active"></div>
+      </div>
+      <div class="size-container">
+        <div class="size-content">
+          <div class="close-btn"><i class="fa-solid fa-xmark"></i></div>
+          <div class="size-header">Size Chart</div>
+          <div class="table">
+            <table>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>S</th>
+                  <th>M</th>
+                  <th>L</th>
+                  <th>XL</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Chest</th>
+                  <td>45"</td>
+                  <td>47"</td>
+                  <td>50"</td>
+                  <td>52"</td>
+                </tr>
+                <tr>
+                  <th>Full Length</th>
+                  <td>27 1/2"</td>
+                  <td>28"</td>
+                  <td>28 1/2"</td>
+                  <td>29"</td>
+                </tr>
+                <tr>
+                  <th>Sleeve Length</th>
+                  <td>10"</td>
+                  <td>11"</td>
+                  <td>11 3/4"</td>
+                  <td>12"</td>
+                </tr>
+                <tr>
+                  <th>Shoulder</th>
+                  <td>20"</td>
+                  <td>21"</td>
+                  <td>22"</td>
+                  <td>23"</td>
+                </tr>
+                <tr>
+                  <th>Arm Hole</th>
+                  <td>20"</td>
+                  <td>20 1/2"</td>
+                  <td>21"</td>
+                  <td>21 1/2"</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
     </main>
-    <!-- <script>
-      $(".carousel").swipe({
-        swipe: function (
-          event,
-          direction,
-          distance,
-          duration,
-          fingerCount,
-          fingerData
-        ) {
-          if (direction == "left") $(this).carousel("next");
-          if (direction == "right") $(this).carousel("prev");
-        },
-        allowPageScroll: "vertical",
-      });
-    </script> -->
+    <script src="../js/pre-loader.js"></script>
 
     <!-- swiper js  -->
-    <script src="../product-enquiry.js"></script>
+    <!-- <script src="../product-enquiry.js"></script> -->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="../swiper.js"></script>
+    <script src="../js/swiper.js"></script>
     <!-- ends -->
+    <script src="../js/chart.js"></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

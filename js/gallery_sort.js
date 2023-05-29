@@ -3,6 +3,7 @@ const cards = document.querySelectorAll(".card");
 
 btn.forEach((x) => {
   x.addEventListener("click", () => {
+    console.log("clicked");
     update(x.id);
 
     btn.forEach((y) => {
@@ -15,6 +16,7 @@ btn.forEach((x) => {
 });
 
 function update(newCat) {
+  console.log("inside the function ");
   cards.forEach((x) => {
     if (x.classList.contains(newCat)) {
       x.style.display = "flex";

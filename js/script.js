@@ -1,9 +1,10 @@
 const sizes = document.querySelectorAll(".size");
 const productSize = document.querySelector("#prSize");
 const items = document.querySelectorAll(".items");
-const card = document.querySelectorAll(".card");
+const card = document.querySelectorAll(".item-inner");
 let activeBtn = "carved";
 
+// categories
 items.forEach((x) => {
   x.addEventListener("click", () => {
     showActive(x.id);
@@ -15,31 +16,20 @@ items.forEach((x) => {
     x.classList.add("add");
   });
 });
-
-// categories
-function resetActive() {}
-function showActive(newmenubtn) {
-  activeBtn = newmenubtn;
-  // if(activeBtn === "gallery"){
-  //   card.classList.contains('gallery').style.display="flex";
-  //   if()
-  // }
-  card.forEach((card) => {
-    if (card.classList.contains(activeBtn)) {
-      card.style.display = "flex";
-    } else if (activeBtn == "gallery") {
-      card.style.display = "flex";
-    } else if (activeBtn == "look") {
-      card.style.display = "flex";
-    } else if (activeBtn == "studio") {
-      card.style.display = "flex";
-    } else if (activeBtn == "all") {
-      card.style.display = "flex";
+function showActive(cat) {
+  console.log(cat);
+  card.forEach((x) => {
+    if (x.classList.contains(cat)) {
+      x.style.display = "flex";
     } else {
-      card.style.display = "none";
+      x.style.display = "none";
+    }
+    if (cat === "all") {
+      x.style.display = "flex";
     }
   });
 }
+
 // ends
 
 // product inner page
@@ -76,3 +66,17 @@ hamMenu.addEventListener("click", () => {
 });
 
 // films
+
+// ends
+// product listing page categories
+// const categorybtn = document.querySelector(".ct-menu-btn");
+// const categoriesMenu = document.querySelector(".categories");
+// categorybtn.addEventListener("click", () => {
+//   console.log("hello found you ");
+//   if (categoriesMenu.classList.contains("op")) {
+//     categoriesMenu.classList.remove("op");
+//   } else {
+//     categoriesMenu.classList.add("op");
+//   }
+// });
+// ends

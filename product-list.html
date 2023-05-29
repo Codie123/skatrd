@@ -5,22 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/pre-loader.css">
+    <link rel="stylesheet" href="./css/pre-loader.css" />
+    <link rel="stylesheet" href="./css/splider.css" />
 
-   <!-- faviicon -->
+    <!-- faviicon -->
 
-   <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
-   <!-- ends -->
-     <!-- fontawesome -->
-     <link
-     rel="stylesheet"
-     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-     crossorigin="anonymous"
-     referrerpolicy="no-referrer"
-   />
-   <!-- ends -->
-   
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png"
+    />
+    <!-- ends -->
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ends -->
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -32,41 +38,44 @@
       defer
     ></script>
     <script src="./js/script.js" defer></script>
+    <script src="./js/pre-loader.js" defer></script>
     <title>Products</title>
   </head>
   <body>
     <div class="preloader">
-     
       <!-- <video src="../assets/preloader.webm" class="view" muted></video> -->
       <img src="./logo.png" class="pulse" alt="" />
     </div>
     <main class="cuz-main w" data-scroll-container>
       <header class="header">
-        <nav class="navbar navbar-expand-lg ">
+        <nav class="navbar navbar-expand-lg">
           <div class="container">
-            <a class="navbar-brand cuz-dark-logo col-2 col-md-3" href="index.html">
+            <a
+              class="navbar-brand cuz-dark-logo col-2 col-md-3"
+              href="index.html"
+            >
               <img src="./logo.png" alt="" />
             </a>
             <button
-            class="navbar-toggler cuz-nav-toggle collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            style="
-              display: flex;
-              flex-direction: column;
-              justify-content: space-between;
-              align-items: center;
-              gap: 5px;
-            "
-          >
-            <span class=""></span>
-            <span class=""></span>
-            <span class=""></span>
-          </button>
+              class="navbar-toggler cuz-nav-toggle collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              style="
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                gap: 5px;
+              "
+            >
+              <span class=""></span>
+              <span class=""></span>
+              <span class=""></span>
+            </button>
             <div class="collapse navbar-collapse cuz-jf-end" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
@@ -79,7 +88,7 @@
                     >Collection</a
                   >
                 </li>
-               
+
                 <li class="nav-item">
                   <a href="film.html" class="nav-link">Film</a>
                 </li>
@@ -94,166 +103,341 @@
           </div>
         </nav>
       </header>
-      <div class="categories ">
+      <div class="categories">
         <h2>Categories</h2>
         <ul>
           <li class="items add" id="all">All</li>
           <!-- <li class="" id="carved" >CARVED</li> -->
           <li class="items" id="skate">SKATE CHANGE LIFE</li>
+          <li class="items" id="uss">USS 04.01</li>
         </ul>
+        <!-- <div class="ct-menu-btn">
+          <i class="fa-solid fa-greater-than"></i>
+        </div> -->
       </div>
-      <section class="" data-scroll-section>
-        <div class="container">
-          <div class="row">
-            <div class="title" data-scroll>Product Collection</div>
-          </div>
-          <div class="card-cont">
-           
-            <!-- skate change life  -->
-            <div
-              class="card cuz-card skate"
-              data-scroll
-              data-scroll-speed="1"
-              data-scroll-direction="vertical"
-            >
-              <a href="./skate-pro/s-424.html">
-                <img src="../assets/skate/1.webp" alt="" />
-              </a>
-              <div class="details">
-                <h2>S-424 DENIM</h2>
-                <p>₹1999/-</p>
+      <section>
+        <div class="latest-wrapper">
+          <div class="title cuz-pt-9" data-scroll=""></div>
+          <ul class="item-list item-list-3c-3c">
+            <!-- latest collection -->
+            <li class="item" id="result_list__item--1363" ontouchstart="">
+              <div class="item-inner uss">
+                <a href="./skate-pro/uss-wh.html" class="detail">
+                  <div class="item-image">
+                    <div>
+                      <img
+                        src="https://raw.githubusercontent.com/Codie123/cdn/main/uploads/uss/white.jpg"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="https://raw.githubusercontent.com/Codie123/cdn/main/uploads/uss/white.jpg"
+                      />
+                    </div>
+                  </div>
+                  <h3 class="item-title item-title-fot">
+                    <b>T-Shirt / OverSized / White / ₹799</b>
+                  </h3>
+                </a>
               </div>
-            </div>
-            <div
-              class="card cuz-card skate"
-              data-scroll
-              data-scroll-speed="1"
-              data-scroll-direction="vertical"
-            >
-              <a href="./skate-pro/s-425.html">
-                <img src="../assets/skate/5.webp" alt="" />
-              </a>
-              <div class="details">
-                <h2>S-425 DENIM CARGOS</h2>
-                <p>₹2299/-</p>
+            </li>
+            <li class="item" id="result_list__item--1363" ontouchstart="">
+              <div class="item-inner uss">
+                <a href="./skate-pro/uss-wh-str.html" class="detail">
+                  <div class="item-image">
+                    <div>
+                      <img
+                        src="https://raw.githubusercontent.com/Codie123/cdn/main/uploads/uss/white-str.jpg"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="https://raw.githubusercontent.com/Codie123/cdn/main/uploads/uss/white-str.jpg"
+                      />
+                    </div>
+                  </div>
+                  <h3 class="item-title item-title-fot">
+                    <b>T-Shirt / OverSized / White / Stripped / ₹899</b>
+                  </h3>
+                </a>
               </div>
-            </div>
-            <div
-              class="card cuz-card skate"
-              data-scroll
-              data-scroll-speed="1"
-              data-scroll-direction="vertical"
-            >
-              <a href="./skate-pro/s-426.html">
-                <img src="../assets/skate/3.webp" alt="" />
-              </a>
-              <div class="details">
-                <h2>S-426 DENIM</h2>
-                <p>₹1799/-</p>
+            </li>
+            <li class="item" id="result_list__item--1363" ontouchstart="">
+              <div class="item-inner uss">
+                <a href="./skate-pro/uss-blk.html" class="detail">
+                  <div class="item-image">
+                    <div>
+                      <img
+                        src="https://raw.githubusercontent.com/Codie123/cdn/main/uploads/uss/black.jpg"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="https://raw.githubusercontent.com/Codie123/cdn/main/uploads/uss/black.jpg"
+                      />
+                    </div>
+                  </div>
+                  <h3 class="item-title item-title-fot">
+                    <b>T-Shirt / OverSized / Black / Printed / ₹799</b>
+                  </h3>
+                </a>
               </div>
-            </div>
-            <div
-              class="card cuz-card skate"
-              data-scroll
-              data-scroll-speed="1"
-              data-scroll-direction="vertical"
-            >
-              <a href="./skate-pro/s-454.html">
-                <img src="../assets/skate/4.webp" alt="" />
-              </a>
-              <div class="details">
-                <h2>S-454 TROUSERS</h2>
-                <p>₹1899/-</p>
+            </li>
+            <li class="item" id="result_list__item--1363" ontouchstart="">
+              <div class="item-inner uss">
+                <a href="./skate-pro/uss-blk-str.html" class="detail">
+                  <div class="item-image">
+                    <div>
+                      <img
+                        src="https://raw.githubusercontent.com/Codie123/cdn/main/uploads/uss/black-str.jpg"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="https://raw.githubusercontent.com/Codie123/cdn/main/uploads/uss/black-str.jpg"
+                      />
+                    </div>
+                  </div>
+                  <h3 class="item-title item-title-fot">
+                    <b>T-Shirt / OverSized / Black / Stripped / ₹899</b>
+                  </h3>
+                </a>
               </div>
-            </div>
-            <div
-              class="card cuz-card skate"
-              data-scroll
-              data-scroll-speed="1"
-              data-scroll-direction="vertical"
-            >
-              <a href="./skate-pro/s-455.html">
-                <img src="./assets/skate/2.webp" alt="" />
-              </a>
-              <div class="details">
-                <h2>S-455 SHORTS</h2>
-                <p>₹1599/-</p>
+            </li>
+            <li class="item" id="result_list__item--1363" ontouchstart="">
+              <div class="item-inner skate">
+                <a href="./skate-pro/s-424.html" class="detail">
+                  <div class="item-image">
+                    <div>
+                      <img
+                        src="https://raw.githubusercontent.com/Codie123/cdn/main/uploads/skate/1.webp"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="https://raw.githubusercontent.com/Codie123/cdn/main/uploads/skate/1.webp"
+                      />
+                    </div>
+                  </div>
+                  <h3 class="item-title item-title-fot">
+                    <b>S-424 / DENIM / ₹1999</b>
+                  </h3>
+                </a>
               </div>
-            </div>
-            <div
-              class="card cuz-card skate"
-              data-scroll
-              data-scroll-speed="1"
-              data-scroll-direction="vertical"
-            >
-              <a href="./skate-pro/s-ov-shirt.html">
-                <img src="./assets/images/t2.jpg" alt="" />
-              </a>
-              <div class="details">
-                <h2>OVERSIZED BAND COLLAR SHIRT WITH ZIPPER</h2>
-                <p>₹1399/-</p>
+            </li>
+            <!-- ends -->
+
+            <li class="item" id="result_list__item--1363" ontouchstart="">
+              <div class="item-inner skate">
+                <a href="./skate-pro/s-424.html" class="detail">
+                  <div class="item-image">
+                    <div>
+                      <img
+                        src="https://raw.githubusercontent.com/Codie123/cdn/main/uploads/skate/1.webp"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="https://raw.githubusercontent.com/Codie123/cdn/main/uploads/skate/1.webp"
+                      />
+                    </div>
+                  </div>
+                  <h3 class="item-title item-title-fot">
+                    <b>S-424 / DENIM / ₹1999</b>
+                  </h3>
+                </a>
               </div>
-            </div>
-            <div
-              class="card cuz-card skate"
-              data-scroll
-              data-scroll-speed="1"
-              data-scroll-direction="vertical"
-            >
-              <a class="cuz-ov" href="./skate-pro/full-zipper-shacket.html">
-                <img src="./assets/skate/4.webp" alt="" />
-              </a>
-              <div class="details">
-                <h2>FULL ZIPPER FLANNEL SHACKET</h2>
-                <p>₹1699/-</p>
+            </li>
+            <li class="item" id="result_list__item--1365" ontouchstart="">
+              <div class="item-inner skate">
+                <a href="./skate-pro/s-425.html" class="detail">
+                  <div class="item-image">
+                    <div>
+                      <img
+                        src="https://raw.githubusercontent.com/Codie123/cdn/main/uploads/skate/5.webp"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="https://raw.githubusercontent.com/Codie123/cdn/main/uploads/skate/5.webp"
+                      />
+                    </div>
+                  </div>
+                  <h3 class="item-title item-title-fot">
+                    <b>S-425 / DENIM CARGOS / ₹2299 </b>
+                  </h3>
+                </a>
               </div>
-            </div>
-          
-            <div
-              class="card cuz-card skate"
-              data-scroll
-              data-scroll-speed="1"
-              data-scroll-direction="vertical"
-            >
-              <a href="./skate-pro/ov-str-shirt.html">
-                <img src="./assets/images/DSC_2433.jpg" alt="" />
-              </a>
-              <div class="details">
-                <h2>OVERSIZED STRIPED SHIRT</h2>
-                <p>₹1299/-</p>
+            </li>
+            <li class="item" id="result_list__item--1436" ontouchstart="">
+              <div class="item-inner skate">
+                <a href="./skate-pro/s-426.html" class="detail">
+                  <div class="item-image">
+                    <div>
+                      <img
+                        src="https://raw.githubusercontent.com/Codie123/cdn/main/uploads/skate/3.webp"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="https://raw.githubusercontent.com/Codie123/cdn/main/uploads/skate/3.webp"
+                      />
+                    </div>
+                  </div>
+                  <h3 class="item-title item-title-fot">
+                    <b>S-426 / DENIM /₹1799</b>
+                  </h3>
+                </a>
               </div>
-            </div>
-            <div
-              class="card cuz-card skate"
-              data-scroll
-              data-scroll-speed="1"
-              data-scroll-direction="vertical"
-            >
-              <a href="./skate-pro/ov-sle-shirt.html">
-                <img src="./assets/images/fulls5.jpg" alt="" />
-              </a>
-              <div class="details">
-                <h2>OVERSIZED FULL SLEEVE SHIRT</h2>
-                <p>₹1599/-</p>
+            </li>
+            <li class="item" id="result_list__item--1459" ontouchstart="">
+              <div class="item-inner skate">
+                <a href="./skate-pro/s-454.html" class="detail">
+                  <div class="item-image">
+                    <div>
+                      <img
+                        src="https://raw.githubusercontent.com/Codie123/cdn/main/uploads/skate/4.webp"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="https://raw.githubusercontent.com/Codie123/cdn/main/uploads/skate/4.webp"
+                      />
+                    </div>
+                  </div>
+                  <h3 class="item-title item-title-fot">
+                    <b>S-454 / TROUSERS / ₹1899</b>
+                  </h3>
+                </a>
               </div>
-            </div>
-            <div
-              class="card cuz-card skate"
-              data-scroll
-              data-scroll-speed="1"
-              data-scroll-direction="vertical"
-            >
-              <a href="./skate-pro/ov-zip-shirt.html">
-                <img src="./assets/images/nc10.jpg" alt="" />
-              </a>
-              <div class="details">
-                <h2>OVERSIZED ZIPPER POCKET SHIRT</h2>
-                <p>₹1599/-</p>
+            </li>
+            <li class="item" id="result_list__item--1459" ontouchstart="">
+              <div class="item-inner skate">
+                <a href="./skate-pro/s-455.html" class="detail">
+                  <div class="item-image">
+                    <div>
+                      <img
+                        src="https://raw.githubusercontent.com/Codie123/cdn/main/uploads/skate/2.webp"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="https://raw.githubusercontent.com/Codie123/cdn/main/uploads/skate/2.webp"
+                      />
+                    </div>
+                  </div>
+                  <h3 class="item-title item-title-fot">
+                    <b>S-455 / SHORTS / ₹1599</b>
+                  </h3>
+                </a>
               </div>
-            </div>
-           
-            </div>
-          </div>
+            </li>
+            <li class="item" id="result_list__item--1459" ontouchstart="">
+              <div class="item-inner skate">
+                <a href="./skate-pro/s-ov-shirt.html" class="detail">
+                  <div class="item-image">
+                    <div>
+                      <img
+                        src="https://raw.githubusercontent.com/Codie123/cdn/main/uploads/skate/t2.jpg"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="https://raw.githubusercontent.com/Codie123/cdn/main/uploads/skate/t2.jpg"
+                      />
+                    </div>
+                  </div>
+                  <h3 class="item-title item-title-fot">
+                    <b>OVERSIZED BAND COLLAR SHIRT WITH ZIPPER / ₹1399</b>
+                  </h3>
+                </a>
+              </div>
+            </li>
+            <li class="item" id="result_list__item--1459" ontouchstart="">
+              <div class="item-inner skate">
+                <a href="./skate-pro/full-zipper-shacket.html" class="detail">
+                  <div class="item-image">
+                    <div>
+                      <img
+                        src="https://raw.githubusercontent.com/Codie123/cdn/main/uploads/skate/t2.jpg"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="https://raw.githubusercontent.com/Codie123/cdn/main/uploads/skate/t2.jpg"
+                      />
+                    </div>
+                  </div>
+                  <h3 class="item-title item-title-fot">
+                    <b>FULL ZIPPER FLANNEL SHACKET / ₹1699</b>
+                  </h3>
+                </a>
+              </div>
+            </li>
+            <li class="item" id="result_list__item--1459" ontouchstart="">
+              <div class="item-inner skate">
+                <a href="./skate-pro/ov-str-shirt.html" class="detail">
+                  <div class="item-image">
+                    <div>
+                      <img
+                        src="https://raw.githubusercontent.com/Codie123/cdn/main/uploads/skate/DSC_2433.jpg"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="https://raw.githubusercontent.com/Codie123/cdn/main/uploads/skate/DSC_2433.jpg"
+                      />
+                    </div>
+                  </div>
+                  <h3 class="item-title item-title-fot">
+                    <b>OVERSIZED STRIPED SHIRT / ₹1299</b>
+                  </h3>
+                </a>
+              </div>
+            </li>
+            <li class="item" id="result_list__item--1459" ontouchstart="">
+              <div class="item-inner skate">
+                <a href="./skate-pro/ov-sle-shirt.html" class="detail">
+                  <div class="item-image">
+                    <div>
+                      <img
+                        src="https://raw.githubusercontent.com/Codie123/cdn/main/uploads/skate/fulls5.jpg"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="https://raw.githubusercontent.com/Codie123/cdn/main/uploads/skate/fulls5.jpg"
+                      />
+                    </div>
+                  </div>
+                  <h3 class="item-title item-title-fot">
+                    <b>OVERSIZED FULL SLEEVE SHIRT / ₹1599</b>
+                  </h3>
+                </a>
+              </div>
+            </li>
+            <li class="item" id="result_list__item--1459" ontouchstart="">
+              <div class="item-inner skate">
+                <a href="./skate-pro/ov-zip-shirt.html" class="detail">
+                  <div class="item-image">
+                    <div>
+                      <img
+                        src="https://raw.githubusercontent.com/Codie123/cdn/main/uploads/skate/nc10.jpg"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="https://raw.githubusercontent.com/Codie123/cdn/main/uploads/skate/nc10.jpg"
+                      />
+                    </div>
+                  </div>
+                  <h3 class="item-title item-title-fot">
+                    <b>OVERSIZED ZIPPER POCKET SHIRT / ₹1599</b>
+                  </h3>
+                </a>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -278,6 +462,9 @@
                   <h3>Help & Assistant</h3>
                   <li><a href="./index.html">Home</a></li>
                   <li><a href="./product-list.html">Collection</a></li>
+                  <li><a href="./film.html">Film</a></li>
+                  <li><a href="./gallery.html">Gallery</a></li>
+
                   <li><a href="./contact.html">Contact</a></li>
                   <li><a href="#">Terms & Condition</a></li>
                 </ul>
@@ -308,6 +495,7 @@
                     <li>
                       <a
                         href="https://in.pinterest.com/projectskatrd/?invite_code=dcc73bd3c870448f8bb9eb9dbe65ed62&sender=598345637901185804"
+                        target="_blank"
                         ><i class="fa-brands fa-pinterest"></i
                       ></a>
                     </li>
@@ -322,14 +510,9 @@
                 </ul>
               </div>
             </div>
-           
           </div>
         </div>
       </footer>
     </main>
-
-    <script src="./js/pre-loader.js"></script>
-  
-    <script src="./js/script.js"></script>
   </body>
 </html>

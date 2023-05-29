@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/splider.css" />
+    <!-- splider bundle -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <!-- ends -->
     <!-- faviicon -->
 
     <link
@@ -48,138 +55,324 @@
       <img src="./logo.png" class="pulse" alt="" />
     </div>
     <!-- ends -->
-    <header class="header">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <a class="navbar-brand cuz-logo col-2 col-md-3" href="index.html">
-            <img src="./logo.png" alt="" />
-          </a>
-          <button
-            class="navbar-toggler cuz-nav-toggle collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            style="
-              display: flex;
-              flex-direction: column;
-              justify-content: space-between;
-              align-items: center;
-              gap: 5px;
-            "
-          >
-            <span class=""></span>
-            <span class=""></span>
-            <span class=""></span>
-          </button>
-          <div class="collapse navbar-collapse cuz-jf-end" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="product-list.html">Collection</a>
-              </li>
-
-              <li class="nav-item">
-                <a href="film.html" class="nav-link">Film</a>
-              </li>
-              <li class="nav-item">
-                <a href="gallery.html" class="nav-link">Gallery</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
     <!-- <div class="bg-noise"></div> -->
-    <section class="hero-section" data-scroll-section>
+    <!-- <section class="hero-section" data-scroll-section>
       <a href="https://www.youtube.com/watch?v=GNtXcd6P1I8" target="_blank">
         <div class="hero" data-scroll data-scroll-speed="-1">
           <video
-            src="./assets/images/skate_change_life.mp4"
-            autoplay
-            loop
-            muted
+          src="./assets/images/skate_change_life.mp4"
+          autoplay
+          loop
+          muted
           ></video>
         </div>
       </a>
-    </section>
-    <main>
+    </section> -->
+    <main class="cuz-main w">
       <div class="wrapper" data-scroll-container>
-        <section class="cuz-bt" data-scroll-section>
-          <div class="container">
-            <div class="row">
-              <div class="title cuz-pt-9" data-scroll>Preview Collection</div>
-            </div>
-            <div class="card-cont">
-              <div
-                class="card cuz-card"
-                data-scroll
-                data-scroll-speed="-1"
-                data-scroll-direction="vertical"
+        <header class="header">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <a
+                class="navbar-brand cuz-dark-logo col-2 col-md-3"
+                href="index.html"
               >
-                <a href="product-list.html">
-                  <img src="./assets/skate/1.webp" alt="" />
-                  <!-- above src path  -->
-                  <!-- ./assets/skate/1.webp -->
-                  <!-- ends -->
-                </a>
-                <div class="details">
-                  <h2>S-424 DENIM</h2>
-                  <p>₹1999/-</p>
-                </div>
-              </div>
-              <div
-                class="card cuz-card"
-                data-scroll
-                data-scroll-speed="-1"
-                data-scroll-direction="vertical"
+                <img src="./logo.png" alt="" />
+              </a>
+              <button
+                class="navbar-toggler cuz-nav-toggle collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-between;
+                  align-items: center;
+                  gap: 5px;
+                "
               >
-                <a href="product-list.html">
-                  <img src="./assets/skate/2.webp" alt="" />
-                </a>
-                <div class="details">
-                  <h2>S-455 SHORTS</h2>
-                  <p>₹1599/-</p>
-                </div>
-              </div>
-              <div
-                class="card cuz-card"
-                data-scroll
-                data-scroll-speed="-1"
-                data-scroll-direction="vertical"
-              >
-                <a href="product-list.html">
-                  <img src="./assets/skate/3.webp" alt="" />
-                </a>
-                <div class="details">
-                  <h2>S-426 DENIM</h2>
-                  <p>₹1799/-</p>
-                </div>
-              </div>
-              <div
-                class="card cuz-card"
-                data-scroll
-                data-scroll-speed="-1"
-                data-scroll-direction="vertical"
-              >
-                <a href="product-list.html">
-                  <img src="./assets/skate/4.webp" alt="" />
-                </a>
-                <div class="details">
-                  <h2>S-454 TROUSERS</h2>
-                  <p>₹1899/-</p>
-                </div>
+                <span class=""></span>
+                <span class=""></span>
+                <span class=""></span>
+              </button>
+              <div class="collapse navbar-collapse cuz-jf-end" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="index.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="product-list.html">Collection</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="film.html" class="nav-link">Film</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                </ul>
               </div>
             </div>
+          </nav>
+        </header>
+        <section
+          class="section-module--section--mQL56 premium-module--section--z7LOi"
+        >
+          <div
+            class="content-module--content--WOm9G content-module--content--wide--ie-XY"
+          >
+            <div class="premium-module--wrapper--In9RN">
+              <div class="premium-module--carousel--qZIEH">
+                <div
+                  class="swiper mySwiper shader-carousel-module--root--yqC2e"
+                  role="group"
+                  id="splide11"
+                  aria-roledescription="carousel"
+                >
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide cuz-bg-ov-hero">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/Codie123/cdn/uploads/hero/naz.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/Codie123/cdn/uploads/hero/ad.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/Codie123/cdn/uploads/hero/tony.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/Codie123/cdn/uploads/hero/ab.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <!-- <div class="swiper-slide">
+                      <img src="./assets/unit.jpg" alt="" />
+                    </div> -->
+                  </div>
+                </div>
+
+                <div
+                  class="splide__arrows shader-carousel-module--arrows--mqZjy splide__arrows--ltr"
+                >
+                  <button
+                    class="shader-carousel-module--arrow--0F-V2 prev shader-carousel-module--arrow-prev--9SVeV"
+                    aria-label="Previous slide"
+                    aria-controls="splide11-track"
+                  >
+                    <svg viewBox="0 0 40 40">
+                      <path
+                        d="m31.9 13.4-1.41 1.41 4.21 4.21h-33.1v2h33.1l-4.21 4.21 1.41 1.41 5.21-5.21 1.42-1.41-1.42-1.41z"
+                      ></path>
+                    </svg></button
+                  ><button
+                    class="next shader-carousel-module--arrow--0F-V2"
+                    aria-label="Next slide"
+                    aria-controls="splide11-track"
+                  >
+                    <svg viewBox="0 0 40 40">
+                      <path
+                        d="m31.9 13.4-1.41 1.41 4.21 4.21h-33.1v2h33.1l-4.21 4.21 1.41 1.41 5.21-5.21 1.42-1.41-1.42-1.41z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="premium-module--content--2VLPT">
+                <div class="premium-module--header--jVtGk">
+                  <!-- <p>Hello</p> -->
+                  <h2>
+                    Welcome to <br />
+                    SKATRD.
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="latest-wrapper">
+            <div class="title cuz-pt-9" data-scroll="">USS</div>
+            <ul class="item-list item-list-3c-2c">
+              <li class="item" id="result_list__item--1363" ontouchstart="">
+                <div class="item-inner">
+                  <a href="product-list.html" class="detail">
+                    <div class="item-image">
+                      <div>
+                        <img
+                          src="https://raw.githubusercontent.com/Codie123/cdn/main/uploads/uss/black.jpg"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="https://raw.githubusercontent.com/Codie123/cdn/main/uploads/uss/black.jpg"
+                        />
+                      </div>
+                    </div>
+                    <h3 class="item-title item-title-fot">
+                      <b
+                        >T-Shirt / OverSized / Black / Printed / 100% Cotton /
+                        220gsm</b
+                      >
+                    </h3>
+                  </a>
+                </div>
+              </li>
+              <li class="item" id="result_list__item--1365" ontouchstart="">
+                <div class="item-inner">
+                  <a href="product-list.html" class="detail">
+                    <div class="item-image">
+                      <div>
+                        <img
+                          src="https://raw.githubusercontent.com/Codie123/cdn/main/uploads/uss/white.jpg"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="https://raw.githubusercontent.com/Codie123/cdn/main/uploads/uss/white.jpg"
+                        />
+                      </div>
+                    </div>
+                    <h3 class="item-title item-title-fot">
+                      <b
+                        >T-Shirt / OverSized / White / Printed / 100% Cotton /
+                        220gsm</b
+                      >
+                    </h3>
+                  </a>
+                </div>
+              </li>
+              <li class="item" id="result_list__item--1436" ontouchstart="">
+                <div class="item-inner">
+                  <a href="product-list.html" class="detail">
+                    <div class="item-image">
+                      <div>
+                        <img
+                          src="https://raw.githubusercontent.com/Codie123/cdn/main/uploads/uss/white-str.jpg"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="https://raw.githubusercontent.com/Codie123/cdn/main/uploads/uss/white-str.jpg"
+                        />
+                      </div>
+                    </div>
+                    <h3 class="item-title item-title-fot">
+                      <b
+                        >T-Shirt / OverSized / White / Stripped / 100% Cotton /
+                        220gsm</b
+                      >
+                    </h3>
+                  </a>
+                </div>
+              </li>
+              <li class="item" id="result_list__item--1459" ontouchstart="">
+                <div class="item-inner">
+                  <a href="product-list.html" class="detail">
+                    <div class="item-image">
+                      <div>
+                        <img
+                          src="https://raw.githubusercontent.com/Codie123/cdn/main/uploads/uss/black-str.jpg"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          src="https://raw.githubusercontent.com/Codie123/cdn/main/uploads/uss/black-str.jpg"
+                        />
+                      </div>
+                    </div>
+                    <h3 class="item-title item-title-fot">
+                      <b
+                        >T-Shirt / OverSized / Black / Stripped / 100% Cotton /
+                        220gsm</b
+                      >
+                    </h3>
+                  </a>
+                </div>
+              </li>
+            </ul>
+            <div class="cuz-flex-jc-end">
+              <p>24 May 2023 / 4 items.</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="latest-wrapper">
+            <div class="title cuz-pt-9" data-scroll="">Preview Collection</div>
+            <ul class="item-list item-list-3c-2c">
+              <li class="item" id="result_list__item--1363" ontouchstart="">
+                <div class="item-inner">
+                  <a href="product-list.html" class="detail">
+                    <div class="item-image">
+                      <div><img src="./assets/skate/1.webp" /></div>
+                      <div><img src="./assets/skate/1.webp" /></div>
+                    </div>
+                    <h3 class="item-title item-title-fot">
+                      <b>S-424 / DENIM </b>
+                    </h3>
+                  </a>
+                </div>
+              </li>
+              <li class="item" id="result_list__item--1365" ontouchstart="">
+                <div class="item-inner">
+                  <a href="product-list.html" class="detail">
+                    <div class="item-image">
+                      <div><img src="./assets/skate/2.webp" /></div>
+                      <div><img src="./assets/skate/2.webp" /></div>
+                    </div>
+                    <h3 class="item-title item-title-fot">
+                      <b>S-455 / SHORTS</b>
+                    </h3>
+                  </a>
+                </div>
+              </li>
+              <li class="item" id="result_list__item--1436" ontouchstart="">
+                <div class="item-inner">
+                  <a href="product-list.html" class="detail">
+                    <div class="item-image">
+                      <div><img src="./assets/skate/3.webp" /></div>
+                      <div><img src="./assets/skate/3.webp" /></div>
+                    </div>
+                    <h3 class="item-title item-title-fot">
+                      <b>S-426 / DENIM</b>
+                    </h3>
+                  </a>
+                </div>
+              </li>
+              <li class="item" id="result_list__item--1459" ontouchstart="">
+                <div class="item-inner">
+                  <a href="product-list.html" class="detail">
+                    <div class="item-image">
+                      <div><img src="./assets/skate/4.webp" /></div>
+                      <div><img src="./assets/skate/4.webp" /></div>
+                    </div>
+                    <h3 class="item-title item-title-fot">
+                      <b>S-454 / TROUSERS</b>
+                    </h3>
+                  </a>
+                </div>
+              </li>
+            </ul>
           </div>
         </section>
 
@@ -235,6 +428,9 @@
                     <h3>Help & Assistant</h3>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./product-list.html">Collection</a></li>
+                    <li><a href="./film.html">Film</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+
                     <li><a href="./contact.html">Contact</a></li>
                     <li><a href="#">Terms & Condition</a></li>
                   </ul>
@@ -286,12 +482,24 @@
       </div>
     </main>
     <script src="./js/pre-loader.js"></script>
-    <script>
-      import LocomotiveScroll from "locomotive-scroll";
 
-      const scroll = new LocomotiveScroll({
-        el: document.querySelector("[data-scroll-container]"),
-        smooth: true,
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        speed: 600,
+        parallax: true,
+        loop: true,
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".next ",
+          prevEl: ".prev",
+        },
+        mousewheel: true,
+        keyboard: true,
       });
     </script>
   </body>
