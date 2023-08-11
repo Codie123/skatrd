@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SKATRD. Media - Go skateboarding day</title>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/pre-loader.css" />
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+    <!-- ends -->
+
+    <!-- ends -->
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ends -->
+
+    <!-- favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png"
+    />
+    <!-- ends -->
+    <!-- swiper css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <!-- ends -->
+    <script src="./js/script.js" defer></script>
+    <script src="./js/pre-loader.js" defer></script>
+    <!-- bootstrap -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"
+      integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <style>
+      .splide__slide img {
+        width: 50%;
+        height: auto;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+  </head>
+  <body>
+    <div class="preloader">
+      <img src="./logo.png" class="pulse" alt="" />
+    </div>
+    <main class="cuz-main w">
+      <header class="p-t-b">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"
+              ><img src="./assets/Group.svg " alt=""
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav align-items-center gap-3">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html"
+                    >Discover</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./product-list.html">Shop</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link active fw-bold" href="./media-room.html"
+                    >Media</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarSupportedContent"
+            >
+              <ul
+                class="navbar-nav align-items-center flex-row justify-content-center mt-5 mt-lg-0"
+              >
+                <li class="nav-item">
+                  <a class="nav-link fw-bold" aria-current="page" href="#"
+                    >Login</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link fw-bold"
+                    aria-current="page"
+                    href="javascript:void(0);"
+                    >/</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fw-bold" href="#">Signup</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <section class="mt-5">
+        <div class="container-fluid">
+          <div class="row justify-content-center justify-content-md-center">
+            <div class="col-2 d-none d-md-block ps-4 pt-4">
+              <div class="blog-gener d-flex flex-column">
+                <!-- <p class="m-0">Genere</p> -->
+                <p class="mb-3">1st August 2023</p>
+              </div>
+              <div class="blog-author">
+                <h6>Author</h6>
+                <p>Yushika Malhotra (Co-founder)</p>
+              </div>
+            </div>
+            <div class="col-md-8 col">
+              <div class="img">
+                <img
+                  src="./assets/media/HG B.jpg"
+                  alt=""
+                  style="width: 100%; /* height: inherit; */"
+                />
+              </div>
+              <div class="blog-header">
+                <h1 class="heading">Cruising with the Big Cats</h1>
+                <span class="auth d-block d-md-none"
+                  >Written by Yushika Malhotra (Co-founder)</span
+                >
+                <span class="date d-block d-md-none">1st August 2023</span>
+              </div>
+              <p class="sub">
+                Homegrown is a term which is normally used to classify a
+                belonging from their own locality or place of living. As pure as
+                the term homegrown is, so is our brand SKATRD, a homegrown brand
+                who got to showcase our pure form in India’s biggest Art and
+                Culture festival, Homegrown Street. It was an event of Art,
+                Culture, Music and Fashion. Brands and artists from all over
+                India came together to have 2 days full of entertainment, style,
+                and connections. Accompanied by HolyStoked, HGS had assembled
+                skate ramps for their event; and you know what will happen when
+                SKATRD sees skate ramps, well yes you guessed right, they’re
+                gonna not leave a chance to not fall for and/or on them. We got
+                the chance to interact and skate with Sagar Waghela from
+                Meteoric Crew, Shruti Sambhaji Bhosle from Skate Academy India,
+                Ishita Malaviya from The Shaka Surf Club, BMX rider Annul Pale
+                and of course the HolyStoked crew of Bangalore.
+              </p>
+
+              <div
+                id="image-carousel"
+                class="splide"
+                aria-label="Beautiful Images"
+              >
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li
+                      class="splide__slide d-flex justify-content-center align-items-center"
+                    >
+                      <img src="./assets/media/Hm-blog/IMG_4347.jpg" alt="" />
+                    </li>
+                    <li
+                      class="splide__slide d-flex justify-content-center align-items-center"
+                    >
+                      <img src="./assets/media/Hm-blog/IMG_4348.jpg" alt="" />
+                    </li>
+                    <li
+                      class="splide__slide d-flex justify-content-center align-items-center"
+                    >
+                      <img src="./assets/media/Hm-blog/IMG_4349.jpg" alt="" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <p class="sub">
+                Other than this, on the fashion side we were recognised
+                alongside the Big Cats of streetwear in India. It was a great
+                opportunity for SKATRD as it got to stand next to Capsul, Almost
+                Gods and Solesearch. Apart from making good connections with the
+                heroes of streetwear itself, we got appreciated by Jay, founder
+                of Jaywalking. Our featured product also found an intriguing
+                audience in Hanumankind, a homegrown artist of rap and hip hop.
+                Talking about the Big cats of the industry, our product
+                Oversized Full Sleeve Shirt was bought and appreciated by one of
+                the founders of the Daily Paper, Abdeer Trabsini, being the
+                cherry on top for this 2 day trip to Mumbai.
+              </p>
+              <h3 class="heading mb-4">Products:</h3>
+              <div class="swiper mySwiper dk-nav">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="./skate-pro/ov-sle-shirt.html">
+                      <img
+                        class="mt-md-4 p-md-4"
+                        src="./assets/skate/2.webp"
+                        draggable="false"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="./skate-pro/ov-zip-shirt.html">
+                      <img
+                        class="mt-md-4 p-md-4"
+                        src="./assets/skate/5.webp"
+                        draggable="false"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="./skate-pro/s-426.html">
+                      <img
+                        class="mt-md-4 p-md-4"
+                        src="./assets/skate/3.webp"
+                        draggable="false"
+                      />
+                    </a>
+                    <span>Product Name</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-2 d-none d-md-block pe-4 pt-4"></div>
+          </div>
+        </div>
+      </section>
+
+      <footer data-scroll-section>
+        <div class="container-fluid" data-scroll>
+          <div class="row">
+            <div class="ft-cont">
+              <div class="ft-logo-wrapper col-md-6 col">
+                <div class="ft-logo">
+                  <img src="./logo.png" alt="" />
+                </div>
+                <div class="ft-logo-extent">
+                  <h3>
+                    UNITING<br />
+                    SCATTERED SKATEBOARDERS
+                  </h3>
+                </div>
+              </div>
+
+              <div class="col col-md-6 cuz-ft-flex">
+                <ul>
+                  <h3>Help & Assistant</h3>
+                  <li><a href="./index.html">Discover</a></li>
+                  <li><a href="./product-list.html">Shop</a></li>
+                  <li><a href="./media-room.html">Media</a></li>
+
+                  <li><a href="./contact.html">Contact</a></li>
+                  <li><a href="./terms.html">Terms & Condition</a></li>
+                </ul>
+                <ul>
+                  <h3>Follow Us</h3>
+                  <div class="social-flex">
+                    <li>
+                      <a
+                        href="https://www.instagram.com/skatrdindia/"
+                        target="_blank"
+                        ><i class="fa-brands fa-instagram"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.youtube.com/@projectskatrd."
+                        target="_blank"
+                        ><i class="fa-brands fa-youtube"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://twitter.com/projectskatrd?s=11&t=Ln_ay2NQuCfwEqd7LGVC5g"
+                        target="_blank"
+                        ><i class="fa-brands fa-twitter"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://in.pinterest.com/projectskatrd/?invite_code=dcc73bd3c870448f8bb9eb9dbe65ed62&sender=598345637901185804"
+                        target="_blank"
+                        ><i class="fa-brands fa-pinterest"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/mwlite/profile/in/project-skatrd-0ab235261"
+                        target="_blank"
+                        ><i class="fa-brands fa-linkedin"></i
+                      ></a>
+                    </li>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      new Splide("#image-carousel").mount();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      // latest swiper js
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      });
+      var swiper = new Swiper(".mySwiperMb", {
+        spaceBetween: 30,
+      });
+      // ends
+      // var swiper = new Swiper(".mySwiper", {
+      //   autoplay: {
+      //     delay: 5000,
+      //   },
+      //   speed: 1200,
+      //   parallax: true,
+      //   loop: false,
+
+      //   pagination: {
+      //     el: ".swiper-pagination",
+      //     clickable: true,
+      //   },
+      //   navigation: {
+      //     nextEl: ".next ",
+      //     prevEl: ".prev",
+      //   },
+      //   mousewheel: true,
+      //   keyboard: true,
+      // });
+    </script>
+  </body>
+</html>
