@@ -2255,11 +2255,12 @@
                 right: 0
             }
 
-            @media screen and (max-width: 640px) {
+            @media screen and (max-width: 768px) {
                 .shader-carousel-module--arrows--mqZjy {
-                    bottom:0;
+                    /* bottom:0;
                     right: 50%;
-                    transform: translateX(50%)
+                    transform: translateX(50%) */
+                    display: none;
                 }
             }
 
