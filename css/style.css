@@ -3734,7 +3734,7 @@ gap: 1rem; */
     font-weight: 800;
   }
   .heading-h3{
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 600;
     font-family: var(--primary-font);
   }
@@ -3748,7 +3748,7 @@ gap: 1rem; */
         font-size: 1.5625rem;
       }
       .heading-h3{
-        font-size: 1.5em;
+        font-size: 1.35em;
       }
       .blog-content p{
         font-size: .9em;
