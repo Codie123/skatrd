@@ -27,7 +27,13 @@
       referrerpolicy="no-referrer"
     />
     <!-- ends -->
+    <!-- swiper css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
 
+    <!-- ends -->
     <!-- favicon -->
     <link
       rel="icon"
@@ -46,6 +52,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <style>
+      .splide__slide img {
+        width: 50%;
+        height: auto;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
   </head>
   <body>
     <div class="preloader">
@@ -55,7 +72,7 @@
       <header class="p-t-b">
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#"
+            <a class="navbar-brand" href="index.html"
               ><img src="./assets/Group.svg " alt=""
             /></a>
             <button
@@ -121,19 +138,38 @@
           </div>
         </nav>
       </header>
-      <section>
-        <div class="container">
-          <div class="row">
-            <div class="blog-header">
-              Go Skateboarding Day, <strong>2023</strong>
 
-              <span> 7th july 2023</span>
+      <section class="mt-5">
+        <div class="container-fluid">
+          <div class="row justify-content-center justify-content-md-center">
+            <div class="col-2 d-none d-md-block ps-4 pt-4">
+              <div class="blog-gener d-flex flex-column">
+                <!-- <p class="m-0">Genere</p> -->
+                <p class="mb-3"> 7th july 2023</p>
+              </div>
+              <div class="blog-author">
+                <h6>Author</h6>
+                <p>Yushika Malhotra</p>
+              </div>
             </div>
-            <div class="blog-img">
-              <img class="" src="./assets/media/blogggg 2.png" alt="" />
-            </div>
-            <div class="blog-description">
-              <p>
+            <div class="col-md-8 col">
+              <div class="img">
+                <img
+                  src="./assets/media/blogggg 2.png"
+                  alt=""
+                  style="width: 100%; /* height: inherit; */"
+                />
+              </div>
+              <div class="blog-header">
+                <h1 class="heading">
+                  Go Skateboarding Day, <strong>2023</strong>
+                </h1>
+                <span class="auth d-block d-md-none"
+                  >Written by Yushika Malhotra
+                </span>
+                <span class="date d-block d-md-none"> 7th july 2023</span>
+              </div>
+              <p class="sub">
                 21st June 2023, a special day for SKATRD, it wasn't just a
                 regular summer day of June but an eventful day for everyone in
                 and around Kannur, where all skaters gathered at Lighthouse Road
@@ -145,6 +181,30 @@
                 culture which was taken forward to a cruising session from
                 Lighthouse Road to Payyambalam Beach Road followed by a skate
                 jam where every skater showcased their talent in skateboarding.
+              </p>
+
+              <div
+                id="image-carousel"
+                class="splide"
+                aria-label="Beautiful Images"
+              >
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li
+                      class="splide__slide d-flex justify-content-center align-items-center"
+                    >
+                      <img src="./assets/media/blog-2.jpg" alt="" />
+                    </li>
+                    <li
+                      class="splide__slide d-flex justify-content-center align-items-center"
+                    >
+                      <img src="./assets/media/blog 1.jpg" alt="" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <p class="sub">
                 We had contests like highest ollies, longest run and of course
                 the Game of Skates. Not just in Kannur, SKATRD team went to Goa
                 for the Monsoon Skatejam at Cirrus, Anjuna where we joined the
@@ -155,150 +215,50 @@
                 skateboarding contests prize. Indeed a happy day and fun day for
                 SKATRD.
               </p>
+              <h3 class="heading mb-4">Products:</h3>
+              <div class="swiper mySwiper dk-nav">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="./skate-pro/uss-blk.html">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/Codie123/cdn/uploads/uss/black.jpg"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="./skate-pro/s-425.html">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/Codie123/cdn/uploads/skate/5.webp"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="./skate-pro/s-424.html">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/Codie123/cdn/uploads/skate/1.webp"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="./carved/s-237.html">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/Codie123/cdn/uploads/carved/s237.jpg"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="./skate-pro/s-ov-shirt.html">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/Codie123/cdn/uploads/skate/t2.jpg"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
             </div>
-
-            <div class="blog-img-cont">
-              <img src="./assets/media/blog-2.jpg" alt="" />
-              <img src="./assets/media/blog 1.jpg" alt="" />
-            </div>
-            <div class="col mt-5">
-              <h2 class="heading">Check Out The Products</h2>
-            </div>
-            <ul class="item-list item-list-3c-2c">
-              <li
-                class="item"
-                id="result_list__item--1363"
-                ontouchstart=""
-                style="display: block"
-              >
-                <div class="item-inner">
-                  <a href="./skate-pro/uss-blk.html" class="detail">
-                    <div class="item-image">
-                      <div>
-                        <img
-                          src="https://cdn.jsdelivr.net/gh/Codie123/cdn/uploads/uss/black.jpg"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="https://cdn.jsdelivr.net/gh/Codie123/cdn/uploads/uss/black.jpg"
-                        />
-                      </div>
-                    </div>
-                    <h3 class="item-title item-title-fot">
-                      <b>T-Shirt / OverSized Black / <span>₹799</span></b>
-                    </h3>
-                  </a>
-                </div>
-              </li>
-              <li
-                class="item skate"
-                id="result_list__item--1365"
-                ontouchstart=""
-                style="display: block"
-              >
-                <div class="item-inner">
-                  <a href="./skate-pro/s-425.html" class="detail">
-                    <div class="item-image">
-                      <div>
-                        <img
-                          src="https://cdn.jsdelivr.net/gh/Codie123/cdn/uploads/skate/5.webp"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="https://cdn.jsdelivr.net/gh/Codie123/cdn/uploads/skate/5.webp"
-                        />
-                      </div>
-                    </div>
-                    <h3 class="item-title item-title-fot">
-                      <b>S-425 / DENIM CARGOS / <span>₹2299</span> </b>
-                    </h3>
-                  </a>
-                </div>
-              </li>
-              <li
-                class="item skate"
-                id="result_list__item--1363"
-                ontouchstart=""
-                style="display: block"
-              >
-                <div class="item-inner">
-                  <a href="./skate-pro/s-424.html" class="detail">
-                    <div class="item-image">
-                      <div>
-                        <img
-                          src="https://cdn.jsdelivr.net/gh/Codie123/cdn/uploads/skate/1.webp"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="https://cdn.jsdelivr.net/gh/Codie123/cdn/uploads/skate/1.webp"
-                        />
-                      </div>
-                    </div>
-                    <h3 class="item-title item-title-fot">
-                      <b>S-424 / DENIM / <span>₹1999</span></b>
-                    </h3>
-                  </a>
-                </div>
-              </li>
-              <li
-                class="item carved"
-                id="result_list__item--1459"
-                ontouchstart=""
-                style="display: block"
-              >
-                <div class="item-inner">
-                  <a href="./carved/s-237.html" class="detail">
-                    <div class="item-image">
-                      <div>
-                        <img
-                          src="https://cdn.jsdelivr.net/gh/Codie123/cdn/uploads/carved/s237.jpg"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="https://cdn.jsdelivr.net/gh/Codie123/cdn/uploads/carved/s237.jpg"
-                        />
-                      </div>
-                    </div>
-                    <h3 class="item-title item-title-fot">
-                      <b>S-237 / <span>₹2399</span></b>
-                    </h3>
-                  </a>
-                </div>
-              </li>
-              <li
-                class="item skate"
-                id="result_list__item--1459"
-                ontouchstart=""
-                style="display: block"
-              >
-                <div class="item-inner">
-                  <a href="./skate-pro/s-ov-shirt.html" class="detail">
-                    <div class="item-image">
-                      <div>
-                        <img
-                          src="https://cdn.jsdelivr.net/gh/Codie123/cdn/uploads/skate/t2.jpg"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src="https://cdn.jsdelivr.net/gh/Codie123/cdn/uploads/skate/t2.jpg"
-                        />
-                      </div>
-                    </div>
-                    <h3 class="item-title item-title-fot">
-                      <b
-                        >OVERSIZED BAND COLLAR SHIRT WITH ZIPPER /
-                        <span>₹1399</span></b
-                      >
-                    </h3>
-                  </a>
-                </div>
-              </li>
-            </ul>
+            <div class="col-2 d-none d-md-block pe-4 pt-4"></div>
           </div>
         </div>
       </section>
@@ -376,17 +336,44 @@
       </footer>
     </main>
 
-    <!-- locomotive script -->
+    <script>
+      new Splide("#image-carousel").mount();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      // latest swiper js
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        autoplay: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      var swiper = new Swiper(".mySwiperMb", {
+        spaceBetween: 30,
+      });
+      // ends
+      // var swiper = new Swiper(".mySwiper", {
+      //   autoplay: {
+      //     delay: 5000,
+      //   },
+      //   speed: 1200,
+      //   parallax: true,
+      //   loop: false,
 
-    <!-- ends -->
-    <!-- <script>
-      (function () {
-        var scroll = new LocomotiveScroll({
-          el: document.querySelector("[]"),
-          smooth: true,
-          smoothMobile: true,
-        });
-      })();
-    </script> -->
+      //   pagination: {
+      //     el: ".swiper-pagination",
+      //     clickable: true,
+      //   },
+      //   navigation: {
+      //     nextEl: ".next ",
+      //     prevEl: ".prev",
+      //   },
+      //   mousewheel: true,
+      //   keyboard: true,
+      // });
+    </script>
   </body>
 </html>

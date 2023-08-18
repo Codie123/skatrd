@@ -155,3 +155,7 @@ if (coupon) {
 }
 
 // ends
+
+// creating session for user experience
+
+// ends

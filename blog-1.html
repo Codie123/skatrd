@@ -51,15 +51,17 @@
       referrerpolicy="no-referrer"
     ></script>
     <!-- ends -->
-    <!-- locomotive js  -->
-    <!-- <link
-      href="
-https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css
-"
+    <style>
+      .splide__slide img {
+        width: 50%;
+        height: auto;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link
       rel="stylesheet"
-    /> -->
-    <!-- ends -->
-    <!-- ends -->
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
   </head>
   <body>
     <div class="preloader">
@@ -69,7 +71,7 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
       <header class="p-t-b">
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#"
+            <a class="navbar-brand" href="index.html"
               ><img src="./assets/Group.svg " alt=""
             /></a>
             <button
@@ -135,22 +137,38 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
           </div>
         </nav>
       </header>
-      <section>
-        <div class="container">
-          <div class="row">
-            <div class="blog-header">
-              From the streets of Kannur to the streets of Goa.
-              <span> 5th July 2023</span>
+
+      <section class="mt-5">
+        <div class="container-fluid">
+          <div class="row justify-content-center justify-content-md-center">
+            <div class="col-2 d-none d-md-block ps-4 pt-4">
+              <div class="blog-gener d-flex flex-column">
+                <!-- <p class="m-0">Genere</p> -->
+                <p class="mb-3">5th July 2023</p>
+              </div>
+              <div class="blog-author">
+                <h6>Author</h6>
+                <p>Yushika Malhotra</p>
+              </div>
             </div>
-            <div class="blog-img">
-              <img
-                class=""
-                src="https://cdn.jsdelivr.net/gh/Codie123/cdn/uploads/blog/goa-store.jpg"
-                alt=""
-              />
-            </div>
-            <div class="blog-description">
-              <p>
+            <div class="col-md-8 col">
+              <div class="img">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/Codie123/cdn/uploads/blog/goa-store.jpg"
+                  alt=""
+                  style="width: 100%; /* height: inherit; */"
+                />
+              </div>
+              <div class="blog-header">
+                <h1 class="heading">
+                  From the streets of Kannur to the streets of Goa.
+                </h1>
+                <span class="auth d-block d-md-none"
+                  >Written by Yushika Malhotra
+                </span>
+                <span class="date d-block d-md-none">5th July 2023</span>
+              </div>
+              <p class="sub">
                 SKATRD’S first ever pop-up happened at Assado, a funky art space
                 with a bar located at the scenic roads of Morjim, North Goa.
                 Assado has always been a place for new artists to come and show
@@ -158,26 +176,80 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
                 got a chance to showcase their work and vibe with the people. An
                 eventful day on 19th September 2022 turned out to be a day for
                 SKATRD to introduce themselves in the Goa streets with their
-                first collection ever, CARVED. Being a skatewear brand, CARVED
-                collection was inspired by the shapes of the board showing the
-                evolution of the skateboards through the years. Accompanied by
-                fellow graffiti artists and skateboarders, SKATRD got to connect
-                with different kinds of subcultures of the street style world.
-                Starting with showcasing the collection to showing off
-                skateboarding tricks at the event, SKATRD got recognized in the
-                streets of Goa.
+                first collection ever, CARVED.
               </p>
+
+              <div
+                id="image-carousel"
+                class="splide"
+                aria-label="Beautiful Images"
+              >
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li
+                      class="splide__slide d-flex justify-content-center align-items-center"
+                    >
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/Codie123/cdn/uploads/blog/goa-store-2.jpg"
+                        alt=""
+                      />
+                    </li>
+                    <li
+                      class="splide__slide d-flex justify-content-center align-items-center"
+                    >
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/Codie123/cdn/uploads/blog/goa.jpg"
+                        alt=""
+                      />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <p class="sub">
+                Being a skatewear brand, CARVED collection was inspired by the
+                shapes of the board showing the evolution of the skateboards
+                through the years. Accompanied by fellow graffiti artists and
+                skateboarders, SKATRD got to connect with different kinds of
+                subcultures of the street style world. Starting with showcasing
+                the collection to showing off skateboarding tricks at the event,
+                SKATRD got recognized in the streets of Goa.
+              </p>
+              <!-- <h3 class="heading mb-4">Products:</h3> -->
+              <!-- <div class="swiper mySwiper dk-nav">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="./skate-pro/ov-sle-shirt.html">
+                      <img
+                        class="mt-md-4 p-md-4"
+                        src="./assets/skate/2.webp"
+                        draggable="false"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="./skate-pro/ov-zip-shirt.html">
+                      <img
+                        class="mt-md-4 p-md-4"
+                        src="./assets/skate/5.webp"
+                        draggable="false"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="./skate-pro/s-426.html">
+                      <img
+                        class="mt-md-4 p-md-4"
+                        src="./assets/skate/3.webp"
+                        draggable="false"
+                      />
+                    </a>
+                    <span>Product Name</span>
+                  </div>
+                </div>
+              </div> -->
             </div>
-            <div class="blog-img-cont">
-              <img
-                src="https://cdn.jsdelivr.net/gh/Codie123/cdn/uploads/blog/goa-store-2.jpg"
-                alt=""
-              />
-              <img
-                src="https://cdn.jsdelivr.net/gh/Codie123/cdn/uploads/blog/goa.jpg"
-                alt=""
-              />
-            </div>
+            <div class="col-2 d-none d-md-block pe-4 pt-4"></div>
           </div>
         </div>
       </section>
@@ -255,17 +327,39 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
       </footer>
     </main>
 
-    <!-- locomotive script -->
+    <script>
+      new Splide("#image-carousel").mount();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      // latest swiper js
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      });
+      var swiper = new Swiper(".mySwiperMb", {
+        spaceBetween: 30,
+      });
+      // ends
+      // var swiper = new Swiper(".mySwiper", {
+      //   autoplay: {
+      //     delay: 5000,
+      //   },
+      //   speed: 1200,
+      //   parallax: true,
+      //   loop: false,
 
-    <!-- ends -->
-    <!-- <script>
-      (function () {
-        var scroll = new LocomotiveScroll({
-          el: document.querySelector("[]"),
-          smooth: true,
-          smoothMobile: true,
-        });
-      })();
-    </script> -->
+      //   pagination: {
+      //     el: ".swiper-pagination",
+      //     clickable: true,
+      //   },
+      //   navigation: {
+      //     nextEl: ".next ",
+      //     prevEl: ".prev",
+      //   },
+      //   mousewheel: true,
+      //   keyboard: true,
+      // });
+    </script>
   </body>
 </html>
