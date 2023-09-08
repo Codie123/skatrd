@@ -462,8 +462,7 @@ header{
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap: 1.5rem;
-
+    margin-bottom: 1rem;
 }
 
 .pr-model {
@@ -490,12 +489,25 @@ header{
 }
 
 .size-table h3 {
-    padding: 0.5em 0.5em;
+    padding: 0.25em 0.25em;
     border: 1px solid var(--primary-text);
     color: var(--primary-text);
     cursor: pointer;
     position: relative;
+    font-size: 1em;
+    width: 40px;
+    border-radius: 50%;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+}
+.size-table h3.no-size{
+    color: #848484;
+    background: #cdcdcd;
+    border-color: #eaeaea;
 }
 
 .size-table h3:hover {
@@ -581,7 +593,7 @@ header{
 /* ends */
 /* list page  */
 .cuz-main {
-    background: var(--bg-primary);
+    background: #ffffff;
     z-index: 10;
     position: unset;
     top: 0;
@@ -1830,7 +1842,7 @@ body.w .cuz-logo img {
     display: flex;
     flex-direction: column;
     /* align-items: center; */
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .cuz-jf-c {
@@ -1872,10 +1884,12 @@ body.w .cuz-logo img {
 .cuz-ul {
     font-size: 1.2em;
     padding-left: 15px;
+    margin-top: 1rem !important;
 }
 
 .cuz-ul li {
     list-style-type: disc;
+    font-size: .8em;
 }
 
 /* ends */
@@ -3394,6 +3408,8 @@ a:link {
 
 .chart {
     cursor: pointer;
+    margin: 0;
+    font-size: .75em;
 }
 
 .close-btn {
@@ -3509,7 +3525,7 @@ input[type=number] {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-evenly;
+    gap: 1rem;
 }
 
 .wt-span {
@@ -3540,7 +3556,7 @@ input[type=number] {
     border-color: black;
     outline: none;
     border: 1px solid;
-    padding: 1rem 1.5rem;
+    padding: 0.5rem 1.2rem;
     z-index: 5;
     color: grey;
     text-transform: uppercase;
@@ -3558,7 +3574,7 @@ input[type=number] {
     color: rgb(137, 137, 137);
     text-transform: capitalize;
 }
-.cp-container{
+.cp-container{  
     position: relative;
 }
 .cp-container i{
@@ -3576,7 +3592,7 @@ input[type=number] {
 }
 
 .check-btn{
-    padding: 1rem 1.5rem;
+    padding: 0.5rem 1.5rem;
     background: black;
     color: white;
     border: 1px solid black;
@@ -3810,3 +3826,19 @@ gap: 1rem; */
 .view-all:hover{
     color:tomato;
 }
+
+/* heading tag  */
+.hdsktrd{
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 1em !important;
+    font-weight: 600;
+}
+@media(max-width:769px){
+    .md-padding{
+        padding: 0 4rem;
+    }
+
+}
+
+/* ends */

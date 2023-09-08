@@ -92,11 +92,11 @@ const navbar = document.querySelector(".navbar");
 // connect on whatsapp
 
 function generateLink() {
-  const greetings = "Hello%20welcome%20to%20SKATRDCLUB%C2%AE%2C%0a";
+  const greetings = "Hello%20welcome%20to%20SKATRD%C2%AE%2C%0a";
   let productName = prName.innerHTML.replaceAll(" ", "%20");
   let code = coupon.value;
   let selectedSize = [];
-  const cp1 = "munz10";
+  const cp1 = "munz30";
 
   sizes.forEach((x) => {
     if (x.classList.contains("click")) {
@@ -128,7 +128,7 @@ if (coupon) {
   });
 
   cpBtn.addEventListener("click", () => {
-    const cp1 = "MUNZ10";
+    const cp1 = "MUNZ30";
     let temp = coupon.value.toUpperCase();
 
     if (temp === cp1) {
@@ -148,9 +148,9 @@ if (coupon) {
   btnWhatsapp.addEventListener("click", (e) => {
     e.preventDefault();
     let target = generateLink();
+    window.open(target, "_blank");
     // console.log(target);
     // location.href = target;
-    window.open(target, "_blank");
   });
 }
 

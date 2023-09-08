@@ -318,7 +318,7 @@
   /* ====================== [ 04 Start Button Style ] ====================== */
   .btn-curve {
     background: transparent;
-    padding: 14px 35px;
+    padding: 14px 16px;
     border: 1px solid #1e1e1e;
     border-radius: 0;
     position: relative;
@@ -3588,8 +3588,8 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 3rem;
-    justify-content: space-around;
+    /* gap: 3rem; */
+    /* justify-content: space-around; */
   }
   /* ends */
   
