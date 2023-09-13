@@ -94,7 +94,8 @@ const navbar = document.querySelector(".navbar");
 function generateLink() {
   const greetings = "Hello%20welcome%20to%20SKATRD%C2%AE%2C%0a";
   let productName = prName.innerHTML.replaceAll(" ", "%20");
-  let code = coupon.value;
+  // let code = coupon.value;
+  // console.log(code);
   let selectedSize = [];
   const cp1 = "munz30";
 
@@ -104,11 +105,9 @@ function generateLink() {
     }
   });
 
-  console.log(selectedSize);
+  // console.log(selectedSize);
   let link = `https://api.whatsapp.com/send?phone=7592020811&text=${greetings}Product%20Name%3D${productName}%0aProduct%20Size%3D
-  ${!selectedSize ? "Size%20Not%20Found" : selectedSize}${
-    code != cp1 ? "" : `%0aDiscount%20Code%3d${code}`
-  }`;
+  ${!selectedSize ? "Size%20Not%20Found" : selectedSize}`;
   // "https://api.whatsapp.com/send?phone=whatsappphonenumber&text=urlencodedtext"
   // console.log(name);
   // btnWhatsapp.setAttribute("href", `${link}`);
@@ -145,17 +144,25 @@ if (coupon) {
 
     // console.log(e.target.value);
   });
-  btnWhatsapp.addEventListener("click", (e) => {
-    e.preventDefault();
-    let target = generateLink();
-    window.open(target, "_blank");
-    // console.log(target);
-    // location.href = target;
-  });
 }
+btnWhatsapp.addEventListener("click", (e) => {
+  e.preventDefault();
+  // console.log(coupon.value);
+  let target = generateLink();
+  window.open(target, "_blank");
+  // console.log(target);
+  // location.href = target;
+});
 
 // ends
 
-// creating session for user experience
+// creating color swap in product page
+const prcolor = document.querySelectorAll(".prImage");
+const slImage = document.querySelectorAll(".slimage");
 
+prcolor.forEach((x) => {
+  x.addEventListener("click", (e) => {
+    console.log(e.target.src);
+  });
+});
 // ends
